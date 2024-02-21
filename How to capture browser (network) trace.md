@@ -7,8 +7,9 @@ Steps to capture Chrome/Edge browser(network) trace.
 1. Press F12 (or Ctrl + Shift + I) , within the new tab created above. (Click on 'Open DevTools' if you are using Edge and this is the first time you open Developer tool)<br/>![image](https://user-images.githubusercontent.com/85205970/206967026-d66c7c6e-3053-461f-8170-5ad2e3360374.png)<br/>
 
 1. Navigate to Network tab and tick checkboxes below.    
-![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/c3fb704f-ba3f-4c5f-9b32-7ceba018e175)<br/>
-<br/><br/>Similarly below tab if you are using Edge<br/>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/c16d699e-7c77-486c-85ab-7b842d4a35c0)
+![image](https://github.com/1015062E/howto/assets/160798406/01e0fff3-683d-453e-870d-68d9e9007288)
+<br/>
+<br/><br/>Similarly below tab if you are using Edge<br/>![image](https://github.com/1015062E/howto/assets/160798406/e03ca7fd-e0a3-4400-9b7a-bdc875298eb8)
 <br/><br/>
 
 1. Trigger capturing if not (Button color is red means it's running) - by default it's running after opening the tool so no need to do act. Just pay attention if it's not.<br/>![image](https://user-images.githubusercontent.com/85205970/196571054-cb1574b6-d654-442e-a7f9-ffc983d13382.png)
