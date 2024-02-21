@@ -1,5 +1,3 @@
-[How to capture browser (network) trace](https://github.com/guoqingsun-msft/guoqingsun/blob/main/Power%20BI/How%20to%20capture%20browser%20(network)%20trace.md)
-
 Steps to capture Chrome/Edge browser(network) trace. 
 
 1. Open your browser. 
@@ -22,4 +20,3 @@ Steps to capture Chrome/Edge browser(network) trace.
 
 1. Save the trace   then Compress(PLEASE DO) and upload the file to the Worksapce shared with you. Please Compress/Zip the file before uploading. Please do! Thanks ~<br>
 ![image](https://user-images.githubusercontent.com/85205970/196571325-2fe49751-7d90-4c99-81ae-e1f6dc4b25a1.png)</br>For Edge browswer - </br>![image](https://user-images.githubusercontent.com/85205970/206968401-6b6f3a6f-1ab2-4f29-9fb3-3a152bfd019b.png)
-
