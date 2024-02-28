@@ -6,12 +6,12 @@
    - For Power BI Desktop from the Store, navigate to: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\Traces`
 
 3. Set the system environment variable `PBI_forceTracing = 1`
-   <br>      ![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/5420630f-1638-4dfe-b083-7f397fd946b7)
+   <br>      ![image](https://github.com/1015062E/howto/assets/160798406/c35f758b-f877-4b06-90f9-cff778eb16c8)
    <br><br>Alternatively, you can set this variable by running the following command in the command prompt (make sure to run as administrator):
    ```cmd
    SETX PBI_forceTracing "1" /M
    ```
-   <br>      ![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/2c84f0ed-1e25-4314-aa04-e10c9e1b8f34)
+   <br>      ![image](https://github.com/1015062E/howto/assets/160798406/27c60b97-44f2-4279-9a4b-e49df7b29eed)
 
 4. Reproduce the issue (the shorter, the better).
    - If the issue involves a visual, refresh the visual using the Performance Analyzer.
@@ -24,4 +24,5 @@
 **Note:** Please remove these settings after usage to avoid slowing down Power BI Desktop performance during daily use.
 
 If you are asked to upload the captured traces, compress the entire folder and upload the compressed file to the provided workspace. 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/ac6b64c1-8200-484b-9cb5-eb96dc9c525e)
+<br>![image](https://github.com/1015062E/howto/assets/160798406/88563d5e-8c0e-437b-90a8-b09f14dccbca)
+
