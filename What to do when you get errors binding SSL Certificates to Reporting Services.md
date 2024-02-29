@@ -53,4 +53,5 @@ How to clean the system of Reporting Services URLs, and rebind the URLs
 
 
 If you have followed those steps from beginning to end, you should have a clean installation of Reporting Services to work with. If your certificate is failing to bind after this, you have an issue with your certificate. I hope this helps!
+
 -----------------------------------
