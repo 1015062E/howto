@@ -21,17 +21,12 @@ How to clean the system of Reporting Services URLs, and rebind the URLs
 ![image](https://github.com/1015062E/howto/assets/160798406/04976a76-a385-430b-842d-50db3591bb67)
 
 2. Now do the same for the Web Service URL tab
-   ![image](https://github.com/1015062E/howto/assets/160798406/efa0a67b-a15f-4fdb-97b9-199d2cfae425)
-
+   <br>![image](https://github.com/1015062E/howto/assets/160798406/efa0a67b-a15f-4fdb-97b9-199d2cfae425)
 
 4. After clearing this portion, you’ll want to check your URL reservation on the server.
 a. Open an Admin Command Prompt
 b. Run “netsh http show urlacl”. Better yet, you might want to export the results out into notepad so you can view them; “netsh http show urlacl > URL.txt”
-c. Find all URLs that have “Reports” or “ReportServer” appended to it. If this is the only instance of Reporting Services on the server, removing the URL binding from Reporting Services Configuration Manager should have also removed all of the URL reservations, but sometimes this does leave some URLs that could not be removed by Reporting Services
-
-
-
-
+c. Find all URLs that have “Reports” or “ReportServer” appended to it. If this is the only instance of Reporting Services on the server, removing the URL binding from Reporting Services Configuration Manager should have also removed all of the URL reservations, but sometimes this does leave some URLs that could not be removed by Reporting Services<br>![image](https://github.com/1015062E/howto/assets/160798406/b48a08e7-1848-44b7-8b3a-a67482368141)
 
 d. If you find any URLs related to Reporting Services, we’ll want to delete those URLs.
 e. Run the following command: netsh http delete urlacl url=”YOUR URL HERE”
@@ -42,17 +37,12 @@ i. Example: netsh http delete urlacl url=http://+:80/Reports/
 a. http://thinknook.com/ssrs-ssl-certificate-nightmare-2011-06-28/
 b. Basically, we’ll need to delete the binding that corresponds to your Certificate Hash, whether it’s the old one or the new one, or both, and then start from scratch. Please look in the properties of the certificate being used to compare. You can access the certificate on the server using mmc.exe, and using the certificate snap-in.
 c. Command to show SSL binding: netsh http show sslcert
-d. Example command to delete: netsh http delete sslcert ipport=[::]:443
+d. Example command to delete: netsh http delete sslcert ipport=[::]:443<br>![image](https://github.com/1015062E/howto/assets/160798406/40564557-c374-464d-8a30-d96ae51b812c)
 
 
-
-
-
-5. Next, we’ll need to check the rsreportserver.config file. It’s located here: <Program Files>\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer
+6. Next, we’ll need to check the rsreportserver.config file. It’s located here: <Program Files>\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer
 a. Make a copy of this file so that you have a backup.
-b. Find the URLReservations portion. There should be one for the ReportServerWebService and ReportManager. If anything is left inside of the second <URL> blocks, you’ll want to clear it. Only delete the highlighted portion.
-
-
+b. Find the URLReservations portion. There should be one for the ReportServerWebService and ReportManager. If anything is left inside of the second <URL> blocks, you’ll want to clear it. Only delete the highlighted portion.<br>![image](https://github.com/1015062E/howto/assets/160798406/d72bbb6d-9716-46be-9616-de9a0208b734)
 
 
 
@@ -62,16 +52,9 @@ By default, and without any URLs reserved, it should look like this:
 
 
 
-c. Scroll to the bottom of the rsreportserver.config file. If there are bindings, they would be located at the very bottom:
+c. Scroll to the bottom of the rsreportserver.config file. If there are bindings, they would be located at the very bottom:<br>![image](https://github.com/1015062E/howto/assets/160798406/ea267031-4719-4871-9b07-91167eea77c5)
 
-
-
-
-
-Clear those out and it should look like this:
-
-
-
+Clear those out and it should look like this:<br>![image](https://github.com/1015062E/howto/assets/160798406/10dcaa08-d247-4e88-b6fb-67104316a9df)
 
 
 6. Save the rsreportserver.config file.
