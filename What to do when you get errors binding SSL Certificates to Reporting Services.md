@@ -1,0 +1,83 @@
+Accessing [this](https://sqlvandalism.com/2017/03/13/what-to-do-when-you-get-errors-binding-ssl-certificates-to-reporting-services/) useful post is recently becoming unstable, hence copying all the content here for future references. 
+
+-----------------------------------
+To have a successful SSL Certificate binding to Reporting Services, it must have the 4 following properties:
+
+1. The certificate has to have a valid expiration date
+2. The certificate has to have a Private Key
+3. The certificate has to be Trusted
+4. The certificate need to be created for Server Authentication
+
+
+Often times, people fail to check these things before trying to bind their certificates to Reporting Services, and it would fail. The above is 1 of the 2 reasons it would fail. The second reason would be because your Report Server is not clean of it’s URL or SSLCert reservations.
+
+Perform the below steps before binding your SSL Certificate again, and if it fails to bind again, check with your Security Administrator on the certificate properties needed for Reporting Services.
+
+You can also use the below steps if you are having trouble setting up HTTP URLs for Reporting Services, minus the portion about SSL Certificates.
+
+How to clean the system of Reporting Services URLs, and rebind the URLs
+
+1. Go into Reporting Services Configuration Manager, and first remove all the URLs from the Report Manager URL tab:
+![image](https://github.com/1015062E/howto/assets/160798406/04976a76-a385-430b-842d-50db3591bb67)
+
+2. Now do the same for the Web Service URL tab
+![image](https://github.com/1015062E/howto/assets/160798406/efa0a67b-a15f-4fdb-97b9-199d2cfae425)
+
+
+3. After clearing this portion, you’ll want to check your URL reservation on the server.
+a. Open an Admin Command Prompt
+b. Run “netsh http show urlacl”. Better yet, you might want to export the results out into notepad so you can view them; “netsh http show urlacl > URL.txt”
+c. Find all URLs that have “Reports” or “ReportServer” appended to it. If this is the only instance of Reporting Services on the server, removing the URL binding from Reporting Services Configuration Manager should have also removed all of the URL reservations, but sometimes this does leave some URLs that could not be removed by Reporting Services
+
+
+
+
+
+d. If you find any URLs related to Reporting Services, we’ll want to delete those URLs.
+e. Run the following command: netsh http delete urlacl url=”YOUR URL HERE”
+i. Example: netsh http delete urlacl url=http://+:80/Reports/
+
+
+4. Once the URL reservations has been clean, we’ll want to clean the SSL reservations. Please see the following blog:
+a. http://thinknook.com/ssrs-ssl-certificate-nightmare-2011-06-28/
+b. Basically, we’ll need to delete the binding that corresponds to your Certificate Hash, whether it’s the old one or the new one, or both, and then start from scratch. Please look in the properties of the certificate being used to compare. You can access the certificate on the server using mmc.exe, and using the certificate snap-in.
+c. Command to show SSL binding: netsh http show sslcert
+d. Example command to delete: netsh http delete sslcert ipport=[::]:443
+
+
+
+
+
+5. Next, we’ll need to check the rsreportserver.config file. It’s located here: <Program Files>\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer
+a. Make a copy of this file so that you have a backup.
+b. Find the URLReservations portion. There should be one for the ReportServerWebService and ReportManager. If anything is left inside of the second <URL> blocks, you’ll want to clear it. Only delete the highlighted portion.
+
+
+
+
+
+By default, and without any URLs reserved, it should look like this:
+
+
+
+
+
+c. Scroll to the bottom of the rsreportserver.config file. If there are bindings, they would be located at the very bottom:
+
+
+
+
+
+Clear those out and it should look like this:
+
+
+
+
+
+6. Save the rsreportserver.config file.
+7. Now Stop and Start Reporting Services.
+8. At this point, everything should be clean, so you can now try to bind the URLs again. Start with the Web Service, and then move to the Report Manager URL.
+
+
+If you have followed those steps from beginning to end, you should have a clean installation of Reporting Services to work with. If your certificate is failing to bind after this, you have an issue with your certificate. I hope this helps!
+-----------------------------------
