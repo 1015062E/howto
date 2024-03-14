@@ -25,3 +25,4 @@
 
 If you are asked to upload the captured traces, compress the entire folder and upload the compressed file to the provided workspace. 
 <br>![image](https://github.com/1015062E/howto/assets/160798406/ca8a600f-8e68-4aa0-9379-86b49eef4b30)
+<br> OR : ![image](https://github.com/1015062E/howto/assets/160798406/80c309b6-4200-4321-ac6b-0335c5ced8df)
