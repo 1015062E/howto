@@ -24,5 +24,4 @@
 **Note:** Please remove these settings after usage to avoid slowing down Power BI Desktop performance during daily use.
 
 If you are asked to upload the captured traces, compress the entire folder and upload the compressed file to the provided workspace. 
-<br>![image](https://github.com/1015062E/howto/assets/160798406/88563d5e-8c0e-437b-90a8-b09f14dccbca)
-
+<br>![image](https://github.com/1015062E/howto/assets/160798406/ca8a600f-8e68-4aa0-9379-86b49eef4b30)
