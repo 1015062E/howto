@@ -1,0 +1,35 @@
+If you already know where your Reporting Services is installed, please directly go to [1.To collect Reporting Service logs](https://github.com/guoqingsun-msft/guoqingsun/blob/main/Reporting%20Services/Collect%20Reporting%20Services%20Log%20Files.md#-1to-collect-reporting-service-logs-please-select-and-compress-the-whole-logfiles-folder-) down below. 
+
+--Check out your Reporting Services' installation path : 
+Applies to : SQL Server Reporting Services(Native mode) 2016 and ealier, SSRS 2017 and later, on-prem Power BI Report Server. 
+
+#### Here is a list of default installation folder for SQL Server Reporting Service or PowerBI Report Server. (Your Reporting Service might be installed to custom specified folder, please follow below instructions to check )
+| RS Version/Env | Default installation folder |
+| ------ | ------ |
+| SSRS 2016 or earlier | C:\Program Files\Microsoft SQL Server\\**MSRS<Version#>.\<InstanceName>**\Reporting Services\ |
+| SSRS 2017 or 2019 | C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ |
+| On-Prem Power BI Report Server | C:\Program Files\Microsoft Power BI Report Server\PBIRS\ |
+
+##### 1).Open Services console (services.msc)
+![image](https://github.com/1015062E/howto/assets/160798406/14af6df0-c681-4cd2-9dcc-4c6c2dcb06f7)
+
+
+##### 2).Find SQL Server Reporting Services, SSRS, or Power BI Report Server. Make sure you are checking correct instance if you have more than one. 
+
+##### 3).Right click the service and check properties. 
+![image](https://github.com/1015062E/howto/assets/160798406/6511e056-c2b2-4bfb-905f-b7f95d57abe1)
+
+
+##### 4).Then you can find your Reporting Service installation location. e.g. : 
+![image](https://github.com/1015062E/howto/assets/160798406/ca74bdd6-9ad3-41a3-8fa4-21702e969c58)
+
+
+
+#### 5).You could then find some folders within main installation folder, like below. 
+![image](https://github.com/1015062E/howto/assets/160798406/e7025842-eba9-464c-bb59-5206f53a0569)
+
+
+#### 6).To collect Reporting Service logs, please select and compress the whole LogFiles folder
+Note : If you have multile instances joined in scale-out group, please do same operation for each instance. 
+<br>![image](https://github.com/1015062E/howto/assets/160798406/83d31447-5a99-4caa-9b5a-6000737040a3)
+
