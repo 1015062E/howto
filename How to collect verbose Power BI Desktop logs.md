@@ -13,6 +13,10 @@
    ```
    <br>      ![image](https://github.com/1015062E/howto/assets/160798406/27c60b97-44f2-4279-9a4b-e49df7b29eed)
 
+
+<br>![image](https://github.com/1015062E/howto/assets/160798406/a4b3e144-c3f4-4d15-9a4f-7d01b7f288a5)
+<br>
+
 4. Reproduce the issue (the shorter, the better).
    - If the issue involves a visual, refresh the visual using the Performance Analyzer.
    - Try to minimize the number of visuals on the page to make the trace shorter.
