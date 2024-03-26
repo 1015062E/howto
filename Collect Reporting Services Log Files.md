@@ -12,7 +12,7 @@ Else, please check out your Reporting Services' installation path following belo
 | On-Prem Power BI Report Server | C:\Program Files\Microsoft Power BI Report Server\PBIRS\ |
 
 ##### 1).Open Services console (services.msc)
->>![image](https://github.com/1015062E/howto/assets/160798406/14af6df0-c681-4cd2-9dcc-4c6c2dcb06f7)
+>![image](https://github.com/1015062E/howto/assets/160798406/14af6df0-c681-4cd2-9dcc-4c6c2dcb06f7)
 
 
 ##### 2).Find SQL Server Reporting Services, SSRS, or Power BI Report Server. Make sure you are checking correct instance if you have more than one. 
@@ -22,15 +22,15 @@ Else, please check out your Reporting Services' installation path following belo
 
 
 ##### 4).Then you can find your Reporting Service installation location. e.g. : 
-![image](https://github.com/1015062E/howto/assets/160798406/ca74bdd6-9ad3-41a3-8fa4-21702e969c58)
+>![image](https://github.com/1015062E/howto/assets/160798406/ca74bdd6-9ad3-41a3-8fa4-21702e969c58)
 
 
 
 #### 5).You could then find some folders within main installation folder, like below. 
-![image](https://github.com/1015062E/howto/assets/160798406/e7025842-eba9-464c-bb59-5206f53a0569)
+>![image](https://github.com/1015062E/howto/assets/160798406/e7025842-eba9-464c-bb59-5206f53a0569)
 
 
 #### 6).To collect Reporting Service logs, please select and compress the whole LogFiles folder
 Note : If you have multile instances joined in scale-out group, please do same operation for each instance. 
-<br>![image](https://github.com/1015062E/howto/assets/160798406/83d31447-5a99-4caa-9b5a-6000737040a3)
+><br>![image](https://github.com/1015062E/howto/assets/160798406/83d31447-5a99-4caa-9b5a-6000737040a3)
 
