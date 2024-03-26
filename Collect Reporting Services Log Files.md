@@ -12,13 +12,13 @@ Else, please check out your Reporting Services' installation path following belo
 | On-Prem Power BI Report Server | C:\Program Files\Microsoft Power BI Report Server\PBIRS\ |
 
 ##### 1).Open Services console (services.msc)
-![image](https://github.com/1015062E/howto/assets/160798406/14af6df0-c681-4cd2-9dcc-4c6c2dcb06f7)
+>![image](https://github.com/1015062E/howto/assets/160798406/14af6df0-c681-4cd2-9dcc-4c6c2dcb06f7)
 
 
 ##### 2).Find SQL Server Reporting Services, SSRS, or Power BI Report Server. Make sure you are checking correct instance if you have more than one. 
 
 ##### 3).Right click the service and check properties. 
-![image](https://github.com/1015062E/howto/assets/160798406/6511e056-c2b2-4bfb-905f-b7f95d57abe1)
+>![image](https://github.com/1015062E/howto/assets/160798406/6511e056-c2b2-4bfb-905f-b7f95d57abe1)
 
 
 ##### 4).Then you can find your Reporting Service installation location. e.g. : 
