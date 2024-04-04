@@ -5,6 +5,8 @@ The command that we will use is:
 ```batch
 for /f "usebackq tokens=*" %i in (`echo %USERDNSDOMAIN%`) do nltest /dsgetdc:%i
 ```
+<br><img width="1086" alt="image" src="https://github.com/1015062E/howto/assets/160798406/2674cab4-ea91-4a3d-96a0-5f60568f5d96">
+
 
 ## The output
 
