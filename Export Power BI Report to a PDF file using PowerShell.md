@@ -1,21 +1,23 @@
-
-
-
-
 **Please refer to this document at your own discretion and understanding of potential risks involved.**
+
+REF : 
+https://learn.microsoft.com/en-us/rest/api/power-bi/reports/export-to-file-in-group
+https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-export-to-file-status-in-group
+https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-file-of-export-to-file-in-group
+
 
 ```PowerShell
 # Import the required module
 Import-Module -Name MicrosoftPowerBIMgmt
 
 # Connect to the Power BI service
-Connect-PowerBIServiceAccount
+# Connect-PowerBIServiceAccount
 
 $authHeader = Get-PowerBIAccessToken
 
 # Define parameters
-$groupId = "71207eec-e312-4a71-856c-771570b8bd8e"
-$reportId = "047fa239-e818-4a5f-9eaa-ccb8557a951c"
+$groupId = "71207eec-e312-4a71-856c-771570b8bd8e" ### REPLACE THE VALUE
+$reportId = "047fa239-e818-4a5f-9eaa-ccb8557a951c" ### REPLACE THE VALUE
 
 
 # Define the REST API endpoint for initiating the export
@@ -44,8 +46,8 @@ $uriExportStatus = "https://api.powerbi.com/v1.0/myorg/groups/$($groupId)/report
 # Initialize a counter for the loop
 $counter = 0
 
-# Check if the request was successful every second for up to 30 seconds
-while ($counter -lt 30) {
+# Check if the request was successful every second for up to 60 seconds
+while ($counter -lt 60) {
     Start-Sleep -s 1
 
     # Make a GET request to check the export status
@@ -54,7 +56,7 @@ while ($counter -lt 30) {
     if ($responseExportStatus.status -eq "Succeeded") { # Download the exported file if export succeeded
         $reportName = $responseExportStatus.reportName -replace ' ', '_'
         $dateTime   = Get-Date -Format "yyyyMMddHHmmss"
-        $filePath   = "C:\$($reportName)$($dateTime)$($responseExportStatus.resourceFileExtension)"
+        $filePath   = "C:\$($reportName)_$($dateTime)$($responseExportStatus.resourceFileExtension)"
 
         # Save the content to the file
         $exportedFileContent | Out-File -FilePath $filePath
@@ -78,7 +80,7 @@ while ($counter -lt 30) {
     $counter++
 }
 
-if ($counter -eq 30) {
-    Write-Output "Export did not complete within 30 seconds."
+if ($counter -eq 60) {
+    Write-Output "Export did not complete within 60 seconds."
 }
 ```
