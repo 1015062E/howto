@@ -6,7 +6,7 @@ REF :
 <br>https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-file-of-export-to-file-in-group
 
 
-<br>Change the Report ID and Group ID inline, and ouptput folder accordingly (by default it's C:\\)
+<br>Change the Report ID and Group ID inline, and the ouptput folder path accordingly (by default it's C:\\)
 <br>If your report path is https://app.powerbi.com/groups/XXXXX/reports/YYYYY/ReportSectionZZZZZ?experience=power-bi, then XXXXX is your group ID and YYYYY is your report ID. 
 
 ```PowerShell
