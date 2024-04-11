@@ -6,7 +6,8 @@ REF :
 <br>https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-file-of-export-to-file-in-group
 
 
-Change the Report ID and Group ID inline, and ouptput folder accordingly (by default it's C:\)
+Change the Report ID and Group ID inline, and ouptput folder accordingly (by default it's C:\\)
+If your report path is https://app.powerbi.com/groups/XXXXX/reports/YYYYY/ReportSectionZZZZZ?experience=power-bi, then XXXXX is your group ID and YYYYY is your report ID. 
 
 ```PowerShell
 # Import the required module
@@ -18,8 +19,8 @@ Connect-PowerBIServiceAccount
 $authHeader = Get-PowerBIAccessToken
 
 # Define parameters
-$groupId = "71207eec-e312-4a71-856c-771570b8bd8e" ### REPLACE THE VALUE
-$reportId = "047fa239-e818-4a5f-9eaa-ccb8557a951c" ### REPLACE THE VALUE
+$groupId = "XXXXX" ### REPLACE THE VALUE
+$reportId = "YYYYY" ### REPLACE THE VALUE
 
 
 # Define the REST API endpoint for initiating the export
