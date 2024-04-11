@@ -1,9 +1,9 @@
 **Please refer to this document at your own discretion and understanding of potential risks involved.**
 
 REF : 
-https://learn.microsoft.com/en-us/rest/api/power-bi/reports/export-to-file-in-group
-https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-export-to-file-status-in-group
-https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-file-of-export-to-file-in-group
+<br>https://learn.microsoft.com/en-us/rest/api/power-bi/reports/export-to-file-in-group
+<br>https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-export-to-file-status-in-group
+<br>https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-file-of-export-to-file-in-group
 
 
 ```PowerShell
