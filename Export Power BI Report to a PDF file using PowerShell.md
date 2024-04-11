@@ -6,6 +6,8 @@ REF :
 <br>https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-file-of-export-to-file-in-group
 
 
+Change the Report ID and Group ID inline, and ouptput folder accordingly (by default it's C:\)
+
 ```PowerShell
 # Import the required module
 Import-Module -Name MicrosoftPowerBIMgmt
