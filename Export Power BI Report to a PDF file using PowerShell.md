@@ -11,7 +11,7 @@ REF :
 Import-Module -Name MicrosoftPowerBIMgmt
 
 # Connect to the Power BI service
-# Connect-PowerBIServiceAccount
+Connect-PowerBIServiceAccount
 
 $authHeader = Get-PowerBIAccessToken
 
