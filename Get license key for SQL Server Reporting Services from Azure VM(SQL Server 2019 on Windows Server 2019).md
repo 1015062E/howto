@@ -1,6 +1,6 @@
 **Please refer to this document at your own discretion and understanding of potential risks involved.**
 
-<br>MS Official doc on how to [Find the product key for SQL Server Reporting Services](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/find-reporting-services-product-key-ssrs?view=sql-server-ver15). Below steps detailed the first method introduced in the doc. 
+<br>MS Official doc on how to [Find the product key for SQL Server Reporting Services](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/find-reporting-services-product-key-ssrs?view=sql-server-ver15). Below steps detailed the first method introduced in the doc. It helps if your SQL Server was installed with pay-as-you-go when creating a new Azure VM like below. 
 
 1.Run SQL Server setup
 <br>![image](https://github.com/1015062E/howto/assets/160798406/671d10bb-88b3-49cb-98ac-c1db138d9241)
