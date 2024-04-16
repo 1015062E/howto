@@ -1,3 +1,5 @@
+**Please refer to this document at your own discretion and understanding of potential risks involved.**
+
 
 ![image](https://github.com/1015062E/howto/assets/160798406/671d10bb-88b3-49cb-98ac-c1db138d9241)
 
