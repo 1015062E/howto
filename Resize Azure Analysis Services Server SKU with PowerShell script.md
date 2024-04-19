@@ -22,6 +22,8 @@ Set-AzContext -Subscription "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 Set-AzAnalysisServicesServer -ResourceGroupName "xxx" -Name "guoqingsunaas" -Sku "yyy"
 ```
 
+<br><img width="868" alt="image" src="https://github.com/1015062E/howto/assets/160798406/2ebff1d5-5f65-4fb0-9fdf-35408b752690">
+
 <br>Reference : 
 <br>https://learn.microsoft.com/en-us/azure/analysis-services/analysis-services-overview#availability-by-region | _Azure Analysis Services is supported in regions throughout the world. Supported plans and query replica availability depend on the region you choose. Plan and query replica availability can change depending on need and available resources for each region._
 <br>https://learn.microsoft.com/en-us/powershell/module/az.analysisservices/set-azanalysisservicesserver?view=azps-11.5.0 | _Set-AzAnalysisServicesServer_
