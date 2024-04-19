@@ -10,7 +10,7 @@ This command uses the Windows Management Instrumentation Command-line (WMIC) to 
 Remember, the number of logical processors is typically twice the number of cores if hyper-threading is enabled on the system. If hyper-threading is disabled, the number of logical processors will be equal to the number of cores. 
 
 Please note that you might need administrative privileges to run this command. If you encounter any issues, try running the Command Prompt as an administrator. To do this, right-click on the Command Prompt in the Start menu and select `Run as administrator`. Then, enter the command as before.
-
+--------------------------------------------
 <br><br>You can also use the Task Manager to check the number of logical processors on your computer. Here's how:
 1. Press `Ctrl + Shift + Esc` to open the Task Manager.
 2. If it opens in the simplified view, click on `More details` at the bottom.
