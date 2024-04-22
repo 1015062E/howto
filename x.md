@@ -1,6 +1,6 @@
 <br>
 <table>
-<td>**WARNING**</td>
+<td>****WARNING****</td>
 <td>Please refer to this document at your own discretion and understanding of potential risks involved.</td>
 </table>
 <br>
