@@ -1,11 +1,9 @@
 <br>
 <table>
-<td>****WARNING****</td>
-<td>Please refer to this document at your own discretion and understanding of potential risks involved.</td>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
 </table>
 <br>
-
-**WARNING**: Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.
 
 Before running the script, ensure that the account used to log in via the upcoming popup window has either the `Tenant.Read.All` or `Tenant.ReadWrite.All` role. This is necessary to retrieve the required information. Without these roles, you may encounter an "unauthorized" error when the script runs.
 
