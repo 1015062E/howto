@@ -42,3 +42,7 @@ $workspaces | ForEach-Object {
 } | Sort-Object "Workspace Name" | Export-Csv -Path $DestPath -NoTypeInformation
 
 ```
+
+References : 
+https://learn.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.workspaces/get-powerbiworkspace?view=powerbi-ps
+https://learn.microsoft.com/en-us/rest/api/power-bi/admin/groups-get-groups-as-admin
