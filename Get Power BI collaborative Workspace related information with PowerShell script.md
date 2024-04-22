@@ -13,7 +13,7 @@ This script is designed to retrieve data for `GroupType=Workspace`, shared works
 
 
 ```powershell
-$DestPath = "C:\TEMP\PersonalWorkspace_Details_20240422-006.csv" # Change the destination path accordingly!
+$DestPath = "C:\TEMP\Workspace_Details_20240422.csv" # Change the destination path accordingly!
 
 if (!(Get-Module -ListAvailable -Name MicrosoftPowerBIMgmt)) {
     Write-Host "Module does not exist, installing the module MicrosoftPowerBIMgmt..."
