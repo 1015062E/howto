@@ -13,11 +13,10 @@
 You can determine whether your laptop is AMD64 or ARM64 by checking the system information. 
 
 #### Method 1: Start command prompt(cmd) and execute below command, then check the output!
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ```cmd
 set | findstr "PROCESSOR_ARCHITECTURE"
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>![image](https://github.com/1015062E/howto/assets/160798406/316b959f-1a89-4795-95b7-90509d4a529e)<br>
+<br>![image](https://github.com/1015062E/howto/assets/160798406/316b959f-1a89-4795-95b7-90509d4a529e)<br>
 
 #### Method 2: 
 1. Press the `Windows key + X` to open the Power User menu.
