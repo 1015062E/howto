@@ -6,7 +6,7 @@
 <br>
 
 
-## To check if .NET x is installed on your PC, follow these steps:
+## To check if .NET x is installed on your computer, follow these steps:
 
 1. Press the **Windows key + R** to open the Run dialog box.
 2. Type `cmd` and press Enter to open the Command Prompt.
@@ -14,15 +14,12 @@
 ```cmd
 dotnet --list-sdks
 ```
-This command will list all the installed .NET SDKs on your computer. If .NET x is installed, you should see it listed there.
+- `dotnet --list-sdks`: Lists all the .NET **SDKs (Software Development Kits)** installed on your computer. The SDK includes everything you need to build and run .NET applications, including the runtime, the framework, and additional tools for building applications.
 
 If you only have the .NET Runtime installed, you can use the following command instead to list all installed .NET Runtimes:
 ```cmd
 dotnet --list-runtimes
 ```
-
-- `dotnet --list-sdks`: Lists all the .NET **SDKs (Software Development Kits)** installed on your computer. The SDK includes everything you need to build and run .NET applications, including the runtime, the framework, and additional tools for building applications.
-
 - `dotnet --list-runtimes`: Lists all the .NET **Runtimes** installed on your computer. The runtime is just the part of the .NET platform that's needed to run .NET applications. It doesn't include the additional tools that come with the SDK.
 
 So, if you're developing .NET applications, you'll need the SDK. But if you're just running a .NET application on your computer, you might only need the runtime.
