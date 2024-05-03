@@ -1,7 +1,7 @@
 1. Terminate all running Power BI Desktop processes on your computer.
 
 2. Clear the folder that contains the Desktop traces. 
-   - For Power BI Desktop installed with .exe installation file, navigate to: `%LOCALAPPDATA%\Microsoft\Power BI Desktop\Traces` 
+   - For Power BI Desktop installed with .exe file, navigate to: `%LOCALAPPDATA%\Microsoft\Power BI Desktop\Traces` 
      <br>![image](https://github.com/1015062E/howto/assets/160798406/a44e79b0-23b3-4359-8b00-f99ad9371925)
    - For Power BI Desktop from the Store, navigate to: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\Traces`
 
