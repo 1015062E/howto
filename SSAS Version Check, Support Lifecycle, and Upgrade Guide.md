@@ -1,3 +1,10 @@
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
+
 This article provides a comprehensive guide on how to check the version of your SQL Server Analysis Services (SSAS) using SQL Server Management Studio (SSMS), determine if the product version is still within Microsoft's support lifecycle, check if the latest version of the product main version (for example, SSAS SQL 2016), latest Service Pack (SP), and Cumulative Update (CU) are still within support. If they are, it guides you on how to upgrade SSAS with a backup first. It also provides a download link for the latest version in case the latest version is still within support.
 
 ### 1. Checking SSAS Version Using SSMS
