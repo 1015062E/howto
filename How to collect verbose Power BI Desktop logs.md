@@ -18,6 +18,7 @@
 <br>
 
 4. Reproduce the issue (the shorter, the better).
+   - If the issue is with Data(Table/Query) refresh issue, just click on **Refresh** button in the menu bar.
    - If the issue involves a visual, refresh the visual using the Performance Analyzer.
    - Try to minimize the number of visuals on the page to make the trace shorter.
 
