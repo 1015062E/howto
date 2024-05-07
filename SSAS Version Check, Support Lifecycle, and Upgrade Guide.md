@@ -11,10 +11,10 @@ How to check the version of your SQL Server Analysis Services (SSAS) using SQL S
 
 To check the version of your SSAS instance using SSMS, follow these steps:
 
-1. Open SQL Server Management Studio (SSMS).
+1. Open SQL Server Management Studio [SSMS](https://aka.ms/ssmsfullsetup).
 2. Connect to the SSAS instance.
 3. The version of your SSAS instance will be displayed as below (Note down the version number and determine its SP and CU with below links).
-4. ![image](https://github.com/1015062E/howto/assets/160798406/2f4f4158-34e7-41ef-9792-84839d54e462)
+![image](https://github.com/1015062E/howto/assets/160798406/2f4f4158-34e7-41ef-9792-84839d54e462)
 
 1. [SQL Server 2016 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2016/build-versions)
 2. [SQL Server 2017 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2017/build-versions)
