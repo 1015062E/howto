@@ -40,9 +40,9 @@ Before upgrading your SSAS, it's crucial to back up all databases and verify tha
 ### 5. Download Link for the Latest Version
 >It's essential to upgrade the Service Pack (SP) before applying the Cumulative Update (CU). For instance, if you're currently using SP1 and wish to upgrade to SP3 and CU1 of SP3, you must first install SP3, followed by CU1 of SP3. A direct upgrade from SP1 to SP3 CU1 is not possible.
 
-[SQL Server 2016 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2016/build-versions)
-[SQL Server 2017 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2017/build-versions)
-[SQL Server 2019 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2019/build-versions)
-[SQL Server 2022 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2022/build-versions)
+<br>[SQL Server 2016 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2016/build-versions)
+<br>[SQL Server 2017 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2017/build-versions)
+<br>[SQL Server 2019 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2019/build-versions)
+<br>[SQL Server 2022 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2022/build-versions)
 
 This guide is intended to be a starting point and does not cover all possible scenarios or complexities that might be involved in your specific situation.
