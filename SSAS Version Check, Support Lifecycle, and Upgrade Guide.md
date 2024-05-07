@@ -29,9 +29,8 @@ To determine if your product version is still within the Microsoft support lifec
 
 
 ### 3. Upgrading SSAS with Backup First if your SSAS is now out of support
-Refer to [Backing Up a Multidimensional or a Tabular Database](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases?view=asallproducts-allversions#bkmk_cube) before upgrading your SSAS to a version within support.
-
-### 4. Download Link for the Latest Version
+Refer to [Backing Up a Multidimensional or a Tabular Database](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases?view=asallproducts-allversions#bkmk_cube) before upgrading your SSAS to a version within support.<br>
+Download Links:<br>
 1. [SQL Server 2016 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2016/build-versions)
 2. [SQL Server 2017 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2017/build-versions)
 3. [SQL Server 2019 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2019/build-versions)
