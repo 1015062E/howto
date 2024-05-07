@@ -5,7 +5,7 @@
 </table>
 <br>
 
-This article provides a comprehensive guide on how to check the version of your SQL Server Analysis Services (SSAS) using SQL Server Management Studio (SSMS), determine if the product version is still within Microsoft's support lifecycle, check if the latest version of the product main version (for example, SSAS SQL 2016), latest Service Pack (SP), and Cumulative Update (CU) are still within support. If they are, it guides you on how to upgrade SSAS with a backup first. It also provides a download link for the latest version in case the latest version is still within support.
+How to check the version of your SQL Server Analysis Services (SSAS) using SQL Server Management Studio (SSMS), determine if the product version is still within Microsoft's support lifecycle.
 
 ### 1. Checking SSAS Version Using SSMS
 
@@ -13,31 +13,28 @@ To check the version of your SSAS instance using SSMS, follow these steps:
 
 1. Open SQL Server Management Studio (SSMS).
 2. Connect to the SSAS instance.
-3. Navigate to `Reports -> Standard Reports -> General`.
+3. The version of your SSAS instance will be displayed as below (Note down the version number and determine its SP and CU with below links).
+4. ![image](https://github.com/1015062E/howto/assets/160798406/2f4f4158-34e7-41ef-9792-84839d54e462)
 
-The version of your SSAS instance will be displayed in the report.
+1. [SQL Server 2016 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2016/build-versions)
+2. [SQL Server 2017 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2017/build-versions)
+3. [SQL Server 2019 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2019/build-versions)
+4. [SQL Server 2022 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2022/build-versions)
 
 ### 2. Determining if the Product Version is Within Microsoft Support Lifecycle
 
-Microsoft provides a lifecycle for each of its products, which includes SQL Server Analysis Services. To determine if your product version is still within the Microsoft support lifecycle, you can visit the [Microsoft Product Lifecycle Search page](^28^). Here, you can search for your product and view its lifecycle, including support and servicing timelines, required updates, migration information, and system requirements.
+To determine if your product version is still within the Microsoft support lifecycle, you can visit the one of below pages accordingly. 
+1. [SQL Server 2016 Lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/sql-server-2016)
+2. [SQL Server 2017 Lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/sql-server-2017)
+3. [SQL Server 2019 Lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/sql-server-2019)
+4. [SQL Server 2022 Lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/sql-server-2022)
 
-### 3. Checking if the Latest Version of the Product Main Version is Still Within Support
 
-To verify if the latest version of the product main version, latest SP, and CU are still within support, you can compare the build version numbers of Analysis Services component files installed on your computer with the build version numbers for a particular CU. 
 
-For example, to verify the component file version for SQL Server 2016 SP3, you can go to the [SQL Server 2016 build versions](^22^) page. In the SQL Server 2016 cumulative update (CU) builds, click the Knowledge Base Number for the build you want to verify. In the Cumulative Update (#) for SQL Server 2016 article, in the Cumulative Update package information section, expand Cumulative update package file information. In the SQL Server 2016 Analysis Services table, check the File version for the msmdsrv.exe component file. If the CU has been applied, the file version number should match the msmdsrv.exe file installed on your computer.
+### 3. Upgrading SSAS with Backup First if your SSAS has been out of support
+Refer to [Backing Up a Multidimensional or a Tabular Database](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases?view=asallproducts-allversions#bkmk_cube) before upgrading your SSAS to a version within support.
 
-### 4. Upgrading SSAS with Backup First
-
-Before upgrading your SSAS, it's crucial to back up all databases and verify that each can be restored. Here are the steps to upgrade your SSAS instance:
-
-1. Backup all databases and verify that each can be restored. To learn more, see [Backup and restore Analysis Services databases](^16^).
-2. Run Setup and specify the name of the existing instance as the name of the new instance for an in-place upgrade.
-3. After the upgrade, process the databases.
-4. Run databases consistency checks.
-5. Test dependent applications.
-
-### 5. Download Link for the Latest Version
+### 4. Download Link for the Latest Version
 1. [SQL Server 2016 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2016/build-versions)
 2. [SQL Server 2017 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2017/build-versions)
 3. [SQL Server 2019 build versions](https://learn.microsoft.com/en-US/troubleshoot/sql/releases/sqlserver-2019/build-versions)
