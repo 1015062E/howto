@@ -21,7 +21,7 @@
    - If the issue involves a visual, refresh the visual using the Performance Analyzer.
    - Try to minimize the number of visuals on the page to make the trace shorter.
 
-5. Close Power BI Desktop.
+5. **Close Power BI Desktop**. (Important! This ensures logs could be refreshed to disk from Memory)
 
 6. Review the files present (one PBIDesktop log, one msmdsrv log, one TRC file and zero or several Mashup traces).
 
