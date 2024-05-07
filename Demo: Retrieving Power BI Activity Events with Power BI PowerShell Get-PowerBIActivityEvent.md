@@ -5,6 +5,8 @@
 </table>
 <br>
 
+<br>[Get-PowerBIActivityEvent](https://learn.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent?view=powerbi-ps). Note: Both StartDateTime and EndDateTime should be within the same UTC day.
+<br>[Full Power BI Operation list](https://learn.microsoft.com/en-us/fabric/admin/operation-list)
 
 ```powershell
 if (!(Get-Module -ListAvailable -Name MicrosoftPowerBIMgmt)) {
@@ -35,7 +37,7 @@ $events = Get-PowerBIActivityEvent -StartDateTime $startDateString -EndDateTime 
 $events | Out-File -FilePath ("C:\PowerBIActivityEvent_" + ($startDate.ToString("yyyyMMdd")) + ".txt")
 ```
 
-
+<br>
 
 ```powershell
 if (!(Get-Module -ListAvailable -Name MicrosoftPowerBIMgmt)) {
