@@ -5,8 +5,7 @@
 </table>
 <br>
 
-[Full Power BI Operation list](https://learn.microsoft.com/en-us/fabric/admin/operation-list)<br>
-[Get-PowerBIActivityEvent](https://learn.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent?view=powerbi-ps). Note: Both StartDateTime and EndDateTime should be within the same UTC day.<br>
+[Full Power BI Operation list](https://learn.microsoft.com/en-us/fabric/admin/operation-list) | [Get-PowerBIActivityEvent](https://learn.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent?view=powerbi-ps). Note: Both StartDateTime and EndDateTime should be within the same UTC day.<br>
 
 ```powershell
 if (!(Get-Module -ListAvailable -Name MicrosoftPowerBIMgmt)) {
