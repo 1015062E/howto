@@ -3,7 +3,9 @@
 
 ## Step 1: Open Report Server Configuration Manager
 
-First, you'll need to open the Report Server Configuration Manager. You can do this by searching for "Report Server Configuration Manager" in the Start menu.
+First, you'll need to open the Report Server Configuration Manager. You can do this by searching for "Report Server Configuration Manager/Reporting Service Configuration Manager" in the Start menu (you may just type **report** then select the app).
+![image](https://github.com/1015062E/howto/assets/160798406/621648c8-8ee1-426b-bb20-021595f7f0e6)
+
 
 ## Step 2: Connect to the Report Server
 
@@ -11,4 +13,6 @@ In the Report Server Configuration Manager, connect to the report server by ente
 
 ## Step 3: Check the Version Number
 
-Once connected, you can find the version number in the "Server Version" section on the "Server Status" page.
+Once connected, you can find the version number in the "Product Version" section on the "Report Server Status" page.
+![image](https://github.com/1015062E/howto/assets/160798406/c427a91b-8a26-4724-8b0f-e086f9cab141)
+
