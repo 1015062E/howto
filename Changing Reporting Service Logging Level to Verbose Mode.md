@@ -3,7 +3,7 @@ Follow the steps below to change the Reporting Services logging level to verbose
 1. **Backup the Original File**
    Before making any changes, it's crucial to take a backup of the original `ReportingServicesService.exe.config` file. This ensures that you can revert to the original settings if needed.
 
-   | RS Version/Env | Default folder of the config file(Note: Your Reporting Services might be installed to custom specified folder) |
+   | RS Version/Env | Default path of the config file(Note: Your Reporting Services might be installed to custom specified folder!!!) |
    | ------ | ------ |
    | SSRS 2016 or earlier | C:\Program Files\Microsoft SQL Server\\**MSRS<Version#>.\<InstanceName>**\Reporting Services\ReportServer\bin\ReportingServicesService.exe.config |
    | SSRS 2017 or later | C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin\ReportingServicesService.exe.config |
