@@ -1,6 +1,6 @@
 To capture network traces for troubleshooting, it is recommended to capture the trace from both the client and server computers simultaneously. 
 
-However, if the server is a third-party product (e.g. SaaS/PaaS) and you don't have access (RDP) to the server, you can only capture from your client computer.  
+However, if the server is a third-party product (e.g. SaaS/PaaS) and you don't have access (RDP) to the server, you just need to capture the trace from your client computer.  
 
 If the requests from the client could be dispatched to a random server, and you or your team have access/RDP to the servers, you may need to run Network Monitor on all possible servers. Alternatively, you can deactivate some servers to ensure the traffic only routes to one server, which simplifies the troubleshooting process.
 
