@@ -1,4 +1,9 @@
-# <Most Importantly> DON'T forget to compress(/zip) the files collected to a single .zip file before uploading them to the provided workspace!!!
+<br>
+<table>
+<td>WARNING</td>
+<td>DON'T forget to compress(zip) the files exported to a .zip file before uploadingto the provided workspace!</td>
+</table>
+<br>
 
 To collect event logs from Windows, follow these steps:
 
@@ -8,5 +13,7 @@ To collect event logs from Windows, follow these steps:
 4. Click "Save All Event As…" (Select Display language as "English" if 'Display info' window popped up)
 5. Save the logs(keep default type *.evtx) to a new folder.
 
-Kindly Note : 1)Collect "Application, Security, and System"(3 types of logs!!!); 2)Compress the whole folder to a .zip file before you upload.
-Please COMPRESS, COMPRESS, COMPRESS the files (or the whole folder where you saved all these logs) before uploading. 
+Kindly Note : 
+1)Collect "Application, Security, and System"(3 types of logs!!!); 
+2)Compress the whole folder to a .zip file before you upload.
+!!!Please COMPRESS, COMPRESS, COMPRESS the files (or the whole folder where you saved all these logs) before uploading!!!
