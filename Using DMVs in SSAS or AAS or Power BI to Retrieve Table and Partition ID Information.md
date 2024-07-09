@@ -4,7 +4,7 @@
 1. **Start SQL Server Management Studio (SSMS)** https://aka.ms/ssmsfullsetup.
 2. In the **Connect to Server** dialog box, select the **SQL Server Analysis Services** server type.
 3. In the **Login** tab, enter the server name by typing the name of the computer on which the server is running.
-4. For a named instance, the server name must be specified in this format: `servername\\instance name`.
+4. For a named SSAS instance, the server name must be specified in this format: `servername\\instance name`. For AAS, the name should be something like `asazure://<Region>.asazure.windows.net/<AASServiceName>`; For Power BI it's something like `powerbi://api.powerbi.com/v1.0/myorg/<workspaceName>`
 5. Once connected, right-click the server or database object > **New Query** > **MDX**.
 6. Type your DMV query, and then click **Execute**, or press **F5**.
 
