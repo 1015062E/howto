@@ -1,4 +1,4 @@
-Ref : https://learn.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography
+Ref : [Configure for strong cryptography](https://learn.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography)
 
 The following registry keys and values are used to configure the .NET Framework:
 1. **SystemDefaultTlsVersions**: Allows the .NET Framework to use the default TLS versions supported by the operating system.
