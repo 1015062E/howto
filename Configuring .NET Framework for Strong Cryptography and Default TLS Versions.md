@@ -1,9 +1,3 @@
-<br>
-<table>
-<td>WARNING</td>
-<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
-</table>
-<br>
 
 The following registry keys and values are used to configure the .NET Framework:
 1. **SystemDefaultTlsVersions**: Allows the .NET Framework to use the default TLS versions supported by the operating system.
