@@ -29,6 +29,7 @@ Else, please check out your Reporting Services' installation path following belo
 
 #### 5).You could then find some folders within main installation folder, like below. 
 >![image](https://github.com/1015062E/howto/assets/160798406/e7025842-eba9-464c-bb59-5206f53a0569)
+>![image](https://github.com/user-attachments/assets/1529581f-7ad2-4fc1-be33-5b1748aa8030)
 
 
 #### 6).To collect Reporting Service logs, please select and compress the whole LogFiles folder
