@@ -19,6 +19,7 @@ Else, please check out your Reporting Services' installation path following belo
 
 ##### 3).Right click the service(take SSRS as example, yours might be different! might be Power BI Report Server which you should know) and check properties. 
 >![image](https://github.com/1015062E/howto/assets/160798406/6511e056-c2b2-4bfb-905f-b7f95d57abe1)
+>![image](https://github.com/user-attachments/assets/b18e8cc0-765d-4f95-8555-9f2dfb75d906)
 
 
 ##### 4).Then you can find your Reporting Service installation location. e.g. : 
