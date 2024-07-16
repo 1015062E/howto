@@ -56,6 +56,10 @@
    - Save the script to a `.ps1` file, for example, `RestoreDatabases.ps1`.
    - Run the script by executing `.\RestoreDatabases.ps1`.
 
+You get below output if the powershell completes well : 
+![image](https://github.com/user-attachments/assets/c4229fbc-c7c3-4c2e-bc84-f23dbd99816a)
+
+
 ### Ref
 https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases?view=asallproducts-allversions#bkmk_cube
 <br><br>https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/restore-options?view=asallproducts-allversions#restoring-databases-using-xmla
