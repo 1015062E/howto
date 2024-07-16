@@ -1,8 +1,10 @@
-# Restoring Multiple SSAS Databases Using PowerShell
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
 
-## Introduction
-
-In this guide, we will walk through the process of restoring multiple SQL Server Analysis Services (SSAS) databases using PowerShell. This method is efficient for handling a large number of databases and ensures consistency in the restore process.
 
 ## Prerequisites
 
