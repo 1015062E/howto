@@ -58,6 +58,6 @@
    - Run the script by executing `.\RestoreDatabases.ps1`.
 
 ## Ref
-<br>https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases?view=asallproducts-allversions#bkmk_cube
-<br>https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/restore-options?view=asallproducts-allversions#restoring-databases-using-xmla
-<br>https://learn.microsoft.com/en-us/analysis-services/xmla/xml-elements-commands/restore-element-xmla?view=asallproducts-allversions
+<br><br>https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases?view=asallproducts-allversions#bkmk_cube
+<br><br>https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/restore-options?view=asallproducts-allversions#restoring-databases-using-xmla
+<br><br>https://learn.microsoft.com/en-us/analysis-services/xmla/xml-elements-commands/restore-element-xmla?view=asallproducts-allversions
