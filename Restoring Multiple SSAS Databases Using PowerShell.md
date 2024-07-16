@@ -43,7 +43,7 @@
    </Restore>
    "@
 
-       $xmlaFile = "C:\temp\$dbName-restore.xmla"
+       $xmlaFile = "$backupPath\$dbName-restore.xmla"
        $xmla | Out-File -FilePath $xmlaFile
 
        Invoke-ASCmd -Server $serverName -InputFile $xmlaFile
