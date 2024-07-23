@@ -1,3 +1,11 @@
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
+
+
 Change supported authentication types for the Reporting Services(or Report Server) to below.
 
 [Configure Windows authentication on the report server](https://learn.microsoft.com/en-us/sql/reporting-services/security/configure-windows-authentication-on-the-report-server?view=sql-server-ver16)
