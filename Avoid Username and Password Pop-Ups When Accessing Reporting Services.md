@@ -1,7 +1,7 @@
-1. Change supported authentication types for the Reporting Services(or Report Server) to below.
-- Please follow [Reporting Services/Reporting Services Installation Path.md](https://github.com/guoqingsun-msft/guoqingsun/blob/main/Reporting%20Services/Reporting%20Services%20Installation%20Path.md) to determine where the configuraiton file RsReportServer.config is. 
-- Update the config file RsReportServer.config for all instances in a scale-out group (Skip if your SSRS/PBIRS is a standalone instance)
-- (Case Sensitive, Order matters!)
+Change supported authentication types for the Reporting Services(or Report Server) to below.
+
+[Configure Windows authentication on the report server](https://learn.microsoft.com/en-us/sql/reporting-services/security/configure-windows-authentication-on-the-report-server?view=sql-server-ver16)
+
 ```
 <AuthenticationTypes>
     <RSWindowsNegotiate/>
@@ -9,7 +9,7 @@
 </AuthenticationTypes>
 ```
 
-2. Then follow - 
+Then : 
 <br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/ee29f824-81a3-4e98-b5d2-0cc8d2589392)
 
 <br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/02db7f96-8001-40ce-8e38-8be54f553857)
