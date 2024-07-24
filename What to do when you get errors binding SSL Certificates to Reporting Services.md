@@ -37,7 +37,12 @@ How to clean the system of Reporting Services URLs, and rebind the URLs
 <br>a. http://thinknook.com/ssrs-ssl-certificate-nightmare-2011-06-28/
 <br>b. Basically, we’ll need to delete the binding that corresponds to your Certificate Hash, whether it’s the old one or the new one, or both, and then start from scratch. Please look in the properties of the certificate being used to compare. You can access the certificate on the server using mmc.exe, and using the certificate snap-in.
 <br>c. Command to show SSL binding: netsh http show sslcert
-<br>d. Example command to delete: netsh http delete sslcert ipport=[::]:443<br>![image](https://github.com/1015062E/howto/assets/160798406/40564557-c374-464d-8a30-d96ae51b812c)
+<br>d. Example command to delete:
+```cmd
+netsh http delete sslcert ipport=[::]:443
+netsh http delete sslcert ipport=0.0.0.0:443
+```
+<br>![image](https://github.com/1015062E/howto/assets/160798406/40564557-c374-464d-8a30-d96ae51b812c)
 
 
 6. Next, we’ll need to check the rsreportserver.config file. It’s located here: <Program Files>\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer
