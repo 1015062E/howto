@@ -25,7 +25,7 @@ How to clean the system of Reporting Services URLs, and rebind the URLs
 
 4. After clearing this portion, you’ll want to check your URL reservation on the server.
 <br>a. Open an Admin Command Prompt
-<br>b. Run “netsh http show urlacl”. Better yet, you might want to export the results out into notepad so you can view them; “netsh http show urlacl > URL.txt”
+<br>b. Run “netsh http show urlacl”. Better yet, you might want to export the results out into notepad so you can view them; `netsh http show urlacl >> C:\urlac.txt`
 <br>c. Find all URLs that have “Reports” or “ReportServer” appended to it. If this is the only instance of Reporting Services on the server, removing the URL binding from Reporting Services Configuration Manager should have also removed all of the URL reservations, but sometimes this does leave some URLs that could not be removed by Reporting Services<br>![image](https://github.com/1015062E/howto/assets/160798406/b48a08e7-1848-44b7-8b3a-a67482368141)
 
 <br>d. If you find any URLs related to Reporting Services, we’ll want to delete those URLs.
