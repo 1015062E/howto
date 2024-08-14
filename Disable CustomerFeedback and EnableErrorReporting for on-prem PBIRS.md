@@ -5,6 +5,8 @@
 </table>
 <br>
 
+Change below registry values to prevent Power BI Report Server from sending requests https://eastus-8.in.applicationinsights.azure.com//v2/track (NOTE: Need to **restart** the computer to make the change take effect)
+
 ```ini
 Windows Registry Editor Version 5.00
 
