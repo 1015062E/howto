@@ -6,7 +6,6 @@
 
 
 Retrieves a list of all the data providers installed on your system that implement the DbProviderFactory class. This command returns a DataTable containing information about each provider, such as:
-
 <br>Name: The readable name of the data provider.
 <br>Description: A description of the data provider.
 <br>InvariantName: The programmatic name used to refer to the data provider.
