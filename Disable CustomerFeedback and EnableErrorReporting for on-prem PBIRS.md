@@ -5,9 +5,14 @@
 </table>
 <br>
 
+```ini
+Windows Registry Editor Version 5.00
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\PBIRS\CPE]
 "CustomerFeedback"=dword:00000000
 "EnableErrorReporting"=dword:00000000
+"ErrorDumpDir"="C:\\Program Files\\Microsoft Power BI Report Server\\PBIRS\\LogFiles"
+```
 
 Before  : 
 ![image](https://github.com/user-attachments/assets/aebfdd77-f519-4d0a-bfba-77e71c64fb7e)
