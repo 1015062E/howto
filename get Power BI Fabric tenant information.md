@@ -1,6 +1,4 @@
-
-
-![image](https://github.com/user-attachments/assets/0c454d70-a0ee-4491-b256-711718b7f11d)
+![image](https://github.com/user-attachments/assets/fc9b2bb9-6e29-4067-a848-1ab3fc898fb5)
 
 
 Take a screenshot like below, and copy the **Tenant URL** in text. 
