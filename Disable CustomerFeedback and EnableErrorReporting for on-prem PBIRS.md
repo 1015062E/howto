@@ -13,10 +13,6 @@
 "EnableErrorReporting"=dword:00000000
 ```
 
-Before  : 
-![image](https://github.com/user-attachments/assets/aebfdd77-f519-4d0a-bfba-77e71c64fb7e)
-
-After : 
 ![image](https://github.com/user-attachments/assets/6f2b6524-85ce-43b8-b134-7dbda561be3a)
 
 #### 2.For SSRS 2017 and after(2019, 2022), the registry path is : 
