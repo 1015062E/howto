@@ -5,7 +5,7 @@
 </table>
 <br>
 
-#### For on-prem Power BI Report Server: Change below registry values to prevent PBIRS from sending requests https://eastus-8.in.applicationinsights.azure.com//v2/track (NOTE: Need to **restart** the computer to make the change take effect)
+#### 1.For on-prem Power BI Report Server: Change below registry values to prevent PBIRS from sending requests https://eastus-8.in.applicationinsights.azure.com//v2/track (NOTE: Need to **restart** the computer to make the change take effect)
 
 ```ini
 Windows Registry Editor Version 5.00
@@ -21,7 +21,7 @@ Before  :
 After : 
 ![image](https://github.com/user-attachments/assets/6f2b6524-85ce-43b8-b134-7dbda561be3a)
 
-#### For SSRS 2017 and after(2019, 2022), the registry path is : Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\CPE
+#### 2.For SSRS 2017 and after(2019, 2022), the registry path is : Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\CPE
 
 ```ini
 Windows Registry Editor Version 5.00
