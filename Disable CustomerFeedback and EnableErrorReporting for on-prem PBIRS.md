@@ -29,7 +29,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\CPE]
 "CustomerFeedback"=dword:00000000
 "EnableErrorReporting"=dword:00000000
-"ErrorDumpDir"="C:\\Program Files\\Microsoft SQL Server Reporting Services\\SSRS\\LogFiles"
 ```
 
 ![image](https://github.com/user-attachments/assets/4d1a1bd9-a53a-4c5b-a63c-6279d8238638)
