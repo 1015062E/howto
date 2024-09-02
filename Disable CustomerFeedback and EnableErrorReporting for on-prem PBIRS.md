@@ -8,8 +8,6 @@
 #### 1.For on-prem Power BI Report Server: Change below registry values to prevent PBIRS from sending requests https://eastus-8.in.applicationinsights.azure.com//v2/track (NOTE: Need to **restart** the computer to make the change take effect)
 
 ```ini
-Windows Registry Editor Version 5.00
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\PBIRS\CPE]
 "CustomerFeedback"=dword:00000000
 "EnableErrorReporting"=dword:00000000
@@ -21,11 +19,9 @@ Before  :
 After : 
 ![image](https://github.com/user-attachments/assets/6f2b6524-85ce-43b8-b134-7dbda561be3a)
 
-#### 2.For SSRS 2017 and after(2019, 2022), the registry path is : Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\CPE
+#### 2.For SSRS 2017 and after(2019, 2022), the registry path is : 
 
 ```ini
-Windows Registry Editor Version 5.00
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\CPE]
 "CustomerFeedback"=dword:00000000
 "EnableErrorReporting"=dword:00000000
