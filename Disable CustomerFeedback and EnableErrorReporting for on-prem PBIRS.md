@@ -21,3 +21,5 @@ Before  :
 
 After : 
 ![image](https://github.com/user-attachments/assets/6f2b6524-85ce-43b8-b134-7dbda561be3a)
+
+For SSRS 2017 and after(2019, 2022), the registry path is : Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\CPE
