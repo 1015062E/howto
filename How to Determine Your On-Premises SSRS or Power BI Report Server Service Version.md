@@ -4,11 +4,12 @@
 ### Quick method : Open web portal , click on "?", select "About xxx": 
 ![image](https://github.com/user-attachments/assets/48e22ac4-3db2-471c-b7df-c932f6a3e66d)
 
-Take a screenshot for the popped up window : 
+### Take a screenshot for the popped up window : 
 ![image](https://github.com/user-attachments/assets/ec9969ec-9f07-484e-a754-dfa7c87a208c)
 
+-------------------------
 
-Alternatively, you can use Report Server Configuration Manager
+### Alternatively, you can use Report Server Configuration Manager
 #### Step 1: Open Report Server Configuration Manager
 
 First, you'll need to open the Report Server Configuration Manager. You can do this by searching for "Report Server Configuration Manager/Reporting Service Configuration Manager" in the Start menu (you may just type **report** then select the app).
