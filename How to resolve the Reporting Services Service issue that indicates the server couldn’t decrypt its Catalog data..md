@@ -1,3 +1,10 @@
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
+
 <Applies to : On-prem SQL Server Reporting Services 2016 and ealier, SSRS 2017 and later, Power BI Report Server>
 
 How to resolve the Reporting Services Service/Report Server issue that indicates the report server couldn’t decrypt those encrypted data in the database(ReportServer Catalog)? You might receive below error message when you come across such issue. 
