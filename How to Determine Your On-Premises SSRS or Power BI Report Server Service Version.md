@@ -1,10 +1,10 @@
 
 
 
-### Quick method : Open web portal , click on "?", select "About xxx": 
+### Quick method : Open web portal , click on "?", select "About xxx". Then take a screenshot for the popped up window. 
 ![image](https://github.com/user-attachments/assets/48e22ac4-3db2-471c-b7df-c932f6a3e66d)
 
-### Take a screenshot for the popped up window : 
+
 ![image](https://github.com/user-attachments/assets/ec9969ec-9f07-484e-a754-dfa7c87a208c)
 
 -------------------------
