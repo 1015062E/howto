@@ -7,6 +7,9 @@
 
 ![image](https://github.com/user-attachments/assets/ec9969ec-9f07-484e-a754-dfa7c87a208c)
 
+![image](https://github.com/user-attachments/assets/d08fc9c7-78ed-4722-b90d-a3e8fb388220)
+
+
 -------------------------
 
 ### Alternatively, you can use Report Server Configuration Manager
