@@ -2,6 +2,12 @@
 
 
 ### Quick method : Open web portal , click on "?", select "About xxx". Then take a screenshot for the popped up window. 
+
+<p style="margin-left: 20px;">
+    <img src="https://github.com/user-attachments/assets/d08fc9c7-78ed-4722-b90d-a3e8fb388220">
+</p>
+
+
 ![image](https://github.com/user-attachments/assets/48e22ac4-3db2-471c-b7df-c932f6a3e66d)
 
 
