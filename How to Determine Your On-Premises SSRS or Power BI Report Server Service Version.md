@@ -2,17 +2,6 @@
 
 
 ### Quick method : Open web portal , click on "?", select "About xxx". Then take a screenshot for the popped up window. 
-
-<p style="margin-left: 100px;">
-    <img src="https://github.com/user-attachments/assets/d08fc9c7-78ed-4722-b90d-a3e8fb388220">
-</p>
-
-
-![image](https://github.com/user-attachments/assets/48e22ac4-3db2-471c-b7df-c932f6a3e66d)
-
-
-![image](https://github.com/user-attachments/assets/ec9969ec-9f07-484e-a754-dfa7c87a208c)
-
 ![image](https://github.com/user-attachments/assets/d08fc9c7-78ed-4722-b90d-a3e8fb388220)
 
 
@@ -33,4 +22,3 @@ In the Report Server Configuration Manager, connect to the report server by ente
 
 Once connected, you can find the version number in the "Product Version" section on the "Report Server Status" page.
 ![image](https://github.com/1015062E/howto/assets/160798406/c427a91b-8a26-4724-8b0f-e086f9cab141)
-
