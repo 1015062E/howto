@@ -3,7 +3,7 @@
 
 ### Quick method : Open web portal , click on "?", select "About xxx". Then take a screenshot for the popped up window. 
 
-<p style="margin-left: 20px;">
+<p style="margin-left: 100px;">
     <img src="https://github.com/user-attachments/assets/d08fc9c7-78ed-4722-b90d-a3e8fb388220">
 </p>
 
