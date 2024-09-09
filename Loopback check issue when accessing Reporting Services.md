@@ -26,7 +26,7 @@ Please follow the steps below to resolve the authentication issue related to the
 
 ### [Method 2: Disable the Authentication Loopback Check](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-2-disable-the-authentication-loopback-check)
 
-Re-enable the behavior that exists in Windows Server by setting the `DisableLoopbackCheck` registry entry in the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` registry subkey to `1`. To set the `DisableLoopbackCheck` registry entry to `1`, follow these steps on the client computer:
+Setting the `DisableLoopbackCheck` registry entry in the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` registry subkey to `1`. Follow these steps on the client computer:
 
 1. Click **Windows Start**, click **Run**, type `regedit`, and then click **OK**.
 2. Locate and then click the following registry subkey: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa`.
@@ -35,4 +35,4 @@ Re-enable the behavior that exists in Windows Server by setting the `DisableLoop
 5. Right-click `DisableLoopbackCheck`, and then click **Modify**.
 6. In the **Value data** box, type `1`, and then click **OK**.
 7. Exit **Registry Editor**.
-8. **Restart** the computer and test if the issue still persits. (You must restart the server for this change to take effect.)
+8. **Restart** the computer and test if the issue still persits. (You must restart the computer for this change to take effect.)
