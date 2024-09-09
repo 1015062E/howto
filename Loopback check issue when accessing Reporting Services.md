@@ -15,7 +15,7 @@ Please follow the steps below to resolve the authentication issue related to the
 3. Right-click `MSV1_0`, point to **New**, and then click **Multi-String Value**.
 4. In the **Name** column, type `BackConnectionHostNames`, and then press **ENTER**.
 5. Right-click `BackConnectionHostNames`, and then click **Modify**.
-6. In the **Value data** box, type the CNAME or the DNS alias used for the local shares on the computer, and then click **OK**. (Do not contain leading or trailing spaces! Each host name should be on a new line. Below values are samples, you need to change these values accordingly.)
+6. In the **Value data** box, type the CNAME or the DNS alias used for the local shares on the computer, and then click **OK**. (1.Do not contain leading or trailing spaces!  2.Each host name should be on a new line.  3.Below values are samples, you need to change these values accordingly.)
     ```
     servername
     servername.domain.com
