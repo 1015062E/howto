@@ -8,7 +8,7 @@
 
 Please follow the steps below to resolve the authentication issue related to the loopback check when accessing the Reporting Services URL.  First, use Method 1 on the Reporting Services server, then restart the server and check if the problem still exists. If the problem persists after implementing Method 1 and restarting the server, please implement Method 2.
 
-### [Method 1 (Recommended): Create Local Security Authority Host Names for NTLM Authentication](link)
+### [Method 1 (Recommended): Create Local Security Authority Host Names for NTLM Authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-1-recommended-create-the-local-security-authority-host-names-that-can-be-referenced-in-a-ntlm-authentication-request)
 
 1. Click **Windows Start**, click **Run**, type `regedit`, and then click **OK**.
 2. Locate and then click the following registry subkey: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
@@ -24,7 +24,7 @@ Please follow the steps below to resolve the authentication issue related to the
     ```
 7. Exit Registry Editor, restart the **Reporting Services server**, and then test if the issue persists.
 
-### [Method 2: Disable the Authentication Loopback Check](link)
+### [Method 2: Disable the Authentication Loopback Check](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-2-disable-the-authentication-loopback-check)
 
 Re-enable the behavior that exists in Windows Server by setting the `DisableLoopbackCheck` registry entry in the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` registry subkey to `1`. To set the `DisableLoopbackCheck` registry entry to `1`, follow these steps on the client computer:
 
