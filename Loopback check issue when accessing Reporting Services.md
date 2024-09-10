@@ -9,7 +9,7 @@
 Please follow the steps below to resolve the authentication issue related to the loopback check when accessing the Reporting Services URL.  
 
 
-To resolve this problem, set the DisableStrictNameChecking registry entry to 1. Then use either of the following methods, as appropriate for your situation.
+## 1.Set the DisableStrictNameChecking registry entry to 1. 
 ```ini
 Registry location: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
 DWORD name: DisableStrictNameChecking
@@ -17,7 +17,9 @@ DWORD value: 1
 ```
 
 
-### [Method 1 (Recommended): Create Local Security Authority Host Names for NTLM Authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-1-recommended-create-the-local-security-authority-host-names-that-can-be-referenced-in-a-ntlm-authentication-request)
+## 2.Then use either of the following methods, as appropriate for your situation.
+
+### [Method1 (Recommended): Create Local Security Authority Host Names for NTLM Authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-1-recommended-create-the-local-security-authority-host-names-that-can-be-referenced-in-a-ntlm-authentication-request)
 
 1. Click **Windows Start**, click **Run**, type `regedit`, and then click **OK**.
 2. Locate and then click the following registry subkey: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
@@ -33,7 +35,7 @@ DWORD value: 1
     ```
 7. Exit Registry Editor, restart the client computer, and then test if the issue persists.
 
-### [Method 2: Disable the Authentication Loopback Check](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-2-disable-the-authentication-loopback-check)
+### [Method2: Disable the Authentication Loopback Check](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-2-disable-the-authentication-loopback-check)
 
 Setting the `DisableLoopbackCheck` registry entry in the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` registry subkey to `1`. Follow these steps on the client computer:
 
