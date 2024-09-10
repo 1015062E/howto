@@ -18,10 +18,16 @@ Change supported authentication types for the Reporting Services(or Report Serve
 ```
 
 Then : 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/ee29f824-81a3-4e98-b5d2-0cc8d2589392)
+<br>![image](https://github.com/user-attachments/assets/694b839b-629a-46fd-9a47-dd38357e0535)
+<br>![image](https://github.com/user-attachments/assets/4ccde708-5977-4998-989d-d0d8ad30761c)
+<br>![image](https://github.com/user-attachments/assets/43a629fb-ef80-41f7-b6aa-aaa4f72d788d)
+<br>![image](https://github.com/user-attachments/assets/90f48b75-ed8e-4fea-ae76-6980426b9756)
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/02db7f96-8001-40ce-8e38-8be54f553857)
+BTW, you can also follow steps below to configure user authentication in trusted sites to "Automatic logon with current username and password" using Group Policy:
+1. **Open Group Policy Editor**: Press `Win + R`, type `gpmc.msc`, and press Enter.
+2. **Navigate to the Policy Setting**: Go to `User Configuration` > `Policies` > `Administrative Templates` > `Windows Components` > `Internet Explorer` > `Internet Control Panel` > `Security Page` > `Trusted Sites Zone`.
+3. **Set Logon Options**: Double-click on "Logon options" and set it to "Automatic logon with current username and password".
+4. **Apply the Policy on Client Machines**: Run `gpupdate /force` on the client machines to apply the new policy settings.
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/53ad7501-4667-497c-97db-ce52bfc3c080)
+![image](https://github.com/user-attachments/assets/08195ca1-ffdc-4fb1-b40c-1a60c40f6170)
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/1a41c6dd-bbd4-4d2a-babe-5108f1bb6841)
