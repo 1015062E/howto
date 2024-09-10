@@ -12,8 +12,8 @@ Please follow the steps below to resolve the authentication issue related to the
 To resolve this problem, set the DisableStrictNameChecking registry entry to 1. Then use either of the following methods, as appropriate for your situation.
 ```ini
 Registry location: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
-**DWORD** name: **DisableStrictNameChecking**
-DWORD value: **1**
+DWORD name: DisableStrictNameChecking
+DWORD value: 1
 ```
 
 
