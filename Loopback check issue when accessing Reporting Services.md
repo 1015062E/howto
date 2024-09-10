@@ -6,7 +6,16 @@
 <br>
 
 
-Please follow the steps below to resolve the authentication issue related to the loopback check when accessing the Reporting Services URL.  First, use Method 1 on the Reporting Services server, then restart the server and check if the problem still exists. If the problem persists after implementing Method 1 and restarting the server, please implement Method 2.
+Please follow the steps below to resolve the authentication issue related to the loopback check when accessing the Reporting Services URL.  
+
+
+To resolve this problem, set the DisableStrictNameChecking registry entry to 1. Then use either of the following methods, as appropriate for your situation.
+```ini
+Registry location: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+**DWORD** name: **DisableStrictNameChecking**
+DWORD value: **1**
+```
+
 
 ### [Method 1 (Recommended): Create Local Security Authority Host Names for NTLM Authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-1-recommended-create-the-local-security-authority-host-names-that-can-be-referenced-in-a-ntlm-authentication-request)
 
