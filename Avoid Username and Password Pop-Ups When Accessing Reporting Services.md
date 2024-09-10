@@ -16,6 +16,7 @@ Change supported authentication types for the Reporting Services(or Report Serve
     <RSWindowsNTLM/>
 </AuthenticationTypes>
 ```
+![image](https://github.com/user-attachments/assets/35ff0698-88da-4bb8-9086-b7b5b4133baf)
 
 Then : 
 <br>![image](https://github.com/user-attachments/assets/694b839b-629a-46fd-9a47-dd38357e0535)
