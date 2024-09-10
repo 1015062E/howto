@@ -16,12 +16,11 @@ Change supported authentication types for the Reporting Services(or Report Serve
     <RSWindowsNTLM/>
 </AuthenticationTypes>
 ```
-![image](https://github.com/user-attachments/assets/35ff0698-88da-4bb8-9086-b7b5b4133baf)
 
 Then : 
 <br>![image](https://github.com/user-attachments/assets/694b839b-629a-46fd-9a47-dd38357e0535)
 <br>![image](https://github.com/user-attachments/assets/4ccde708-5977-4998-989d-d0d8ad30761c)
-<br>![image](https://github.com/user-attachments/assets/43a629fb-ef80-41f7-b6aa-aaa4f72d788d)
+<br>![image](https://github.com/user-attachments/assets/35ff0698-88da-4bb8-9086-b7b5b4133baf)
 <br>![image](https://github.com/user-attachments/assets/90f48b75-ed8e-4fea-ae76-6980426b9756)
 
 BTW, you can also follow steps below to configure user authentication in trusted sites to "Automatic logon with current username and password" using Group Policy:
