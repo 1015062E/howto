@@ -31,7 +31,7 @@ DWORD value: 1
     virtualname
     virtualname.domain.com
     ```
-7. Exit Registry Editor, restart the **Reporting Services server**, and then test if the issue persists.
+7. Exit Registry Editor, restart the client computer, and then test if the issue persists.
 
 ### [Method 2: Disable the Authentication Loopback Check](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-2-disable-the-authentication-loopback-check)
 
