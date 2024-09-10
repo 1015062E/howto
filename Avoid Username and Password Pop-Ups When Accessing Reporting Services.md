@@ -23,7 +23,7 @@ Then :
 <br>![image](https://github.com/user-attachments/assets/35ff0698-88da-4bb8-9086-b7b5b4133baf)
 <br>![image](https://github.com/user-attachments/assets/90f48b75-ed8e-4fea-ae76-6980426b9756)
 
-BTW, alternatively, to make above changes via GPO: 
+## BTW, Alternatively if you want to make above changes via GPO for all your computers in a specific domain: 
 ### Follow these steps to add your website `http(s)://xxx.com/Reports` to the Trusted Sites Zone using Group Policy:
 1. **Open Group Policy Management Console (GPMC)**: Press `Win + R`, type `gpmc.msc`, and press Enter.
 2. **Create or Edit a GPO**: Right-click on the domain or organizational unit (OU) where you want to apply the policy. Select "Create a GPO in this domain, and Link it here..." or choose an existing GPO and select "Edit".
