@@ -59,7 +59,7 @@ for ($i=0; $i -le 30; $i++) {
     $end = (Get-Date).AddDays(-$i).ToString("yyyy-MM-ddT23:59:59")
 
     # Retrieve the activity events for the day and add them to the output array
-    $json = Get-PowerBIActivityEvent -StartDateTime $start -EndDateTime $end -ActivityType # "InstallTemplateApp" 
+    $json = Get-PowerBIActivityEvent -StartDateTime $start -EndDateTime $end # -ActivityType "InstallTemplateApp" 
 
     # Convert the JSON string to a PowerShell object
     $events = $json | ConvertFrom-Json
