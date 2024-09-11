@@ -1,9 +1,11 @@
-```
+```PowerShell
 [System.Data.Common.DbProviderFactories]::GetFactoryClasses()|ogv
 ```
 ![image](https://github.com/user-attachments/assets/6b58dc60-331e-4a55-8071-56f5b68342f0)
 
-
+```PowerShell
+[System.Data.Common.DbProviderFactories]::GetFactoryClasses()
+```
 
 Retrieves a list of all the data providers installed on your system that implement the DbProviderFactory class. This command returns a DataTable containing information about each provider, such as:
 - Name: The readable name of the data provider.
