@@ -25,3 +25,7 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ORACLE\KEY_ORAClient_xxxxxxxx
 Open `%windir%\Microsoft.NET\assembly`, search `System.Data.OracleClient.dll`
 ![image](https://github.com/user-attachments/assets/d379d54b-f0ad-49bc-8251-5ea8405867bc)
 
+CMD : 
+```cmd
+echo %PATH%
+```
