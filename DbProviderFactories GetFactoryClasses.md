@@ -14,3 +14,14 @@ Retrieves a list of all the data providers installed on your system that impleme
 - AssemblyQualifiedName: The fully qualified name of the factory class, which includes enough information to instantiate the object.
 
 <br>Ref : https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbproviderfactories?view=net-8.0
+
+To check if there's 32 bit or 64 bit ODAC driver installed : 
+
+Using registry : 
+```ini
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ORACLE\KEY_ORAClient_xxxxxxxx
+```
+
+Open `%windir%\Microsoft.NET\assembly`, search `System.Data.OracleClient.dll`
+![image](https://github.com/user-attachments/assets/d379d54b-f0ad-49bc-8251-5ea8405867bc)
+
