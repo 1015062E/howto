@@ -75,5 +75,5 @@ $csv = $output | ConvertTo-Csv -NoTypeInformation
 $csv = $csv.Replace('"', '')
 
 # Write the CSV string to a file
-$csv | Out-File -FilePath "C:\Path\To\006.csv"
+$csv | Out-File -FilePath "C:\temp\001.csv"
 ```
