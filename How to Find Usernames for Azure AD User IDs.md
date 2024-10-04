@@ -8,7 +8,7 @@ If you have a list of Azure AD User Object IDs and need to find the correspondin
 
 2. **Navigate to Microsoft Entra ID**:
    - In the left-hand navigation pane, select **Microsoft Entra ID**. <br>![image](https://github.com/user-attachments/assets/c8ce9af4-6abf-4971-ad64-d19ef6aad864)
-   - Then click on **Users**.<br>![image](https://github.com/user-attachments/assets/ce03f49e-4116-4298-aabf-3f294a1672bf)
+   - Then click on **Manage** | **Users** | **All Users** <br>![image](https://github.com/user-attachments/assets/ce03f49e-4116-4298-aabf-3f294a1672bf)
 
 3. **Search for User**:
    - Use the search bar to enter the User Object ID.<br>![image](https://github.com/user-attachments/assets/01688e0f-048e-4157-b3e3-8b8fbc938778)
