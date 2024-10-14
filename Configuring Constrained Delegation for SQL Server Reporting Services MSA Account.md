@@ -1,0 +1,68 @@
+# Configuring Constrained Delegation for SQL Server Reporting Services MSA Account
+
+In this post, we'll walk through the steps to configure constrained delegation for a Managed Service Account (MSA) used by SQL Server Reporting Services. This guide is based on a real-world scenario and was generated with the assistance of AI.
+
+## Scenario
+
+We have two MSA accounts:
+- **SQL Server Service AG Listener Account**: `DOMAIN\SQLAGListener_MSA$`
+- **Reporting Services Service Account**: `DOMAIN\RSService_MSA$`
+
+The goal is to register the SPNs from the SQL Server service account onto the reporting service account with constrained delegation.
+
+## Steps
+
+### 1. Register SPNs
+
+First, we need to register SQL Server SPNs for `DOMAIN\SQLAGListener_MSA$`.
+
+Open PowerShell with administrative privileges and run the following commands:
+
+```cmd
+setspn -S MSSQLSvc/sqlserver.domain.com:port DOMAIN\SQLAGListener_MSA$
+setspn -S MSSQLSvc/sqlserver.domain.com:instance DOMAIN\SQLAGListener_MSA$
+setspn -S MSSQLSvc/sqlserver:port DOMAIN\SQLAGListener_MSA$
+setspn -S MSSQLSvc/sqlserver:instance DOMAIN\SQLAGListener_MSA$
+```
+
+### 2. Configure Constrained Delegation
+
+Next, configure constrained delegation for the reporting service account:
+
+```powershell
+Set-ADServiceAccount -Identity RSService_MSA$ -Add @{'msDS-AllowedToDelegateTo'='MSSQLSvc/sqlserver.domain.com:port','MSSQLSvc/sqlserver.domain.com:instance','MSSQLSvc/sqlserver:port','MSSQLSvc/sqlserver:instance'}
+```
+
+### 3. Disable Unconstrained Delegation
+
+To ensure the account only uses constrained delegation, disable unconstrained delegation:
+
+```powershell
+Set-ADAccountControl -Identity RSService_MSA$ -TrustedForDelegation $false -TrustedToAuthForDelegation $true
+```
+
+### 4. Verify Configuration
+
+Finally, verify the delegation settings:
+
+```powershell
+Get-ADServiceAccount -Identity "RSService_MSA$" -Properties msDS-AllowedToDelegateTo
+```
+
+### 5. Synchronize Active Directory
+
+Run the following command to synchronize Active Directory:
+
+```cmd
+repadmin /syncall
+```
+
+### 6. Restart SQL Server Reporting Services
+
+After making these changes, restart the SQL Server Reporting Services to apply the new settings.
+
+## Conclusion
+
+By following these steps, you can successfully configure constrained delegation for your SQL Server Reporting Services MSA account. This ensures that the account can only delegate to specified services, enhancing security.
+
+*Note: This content was generated with the assistance of AI.*
