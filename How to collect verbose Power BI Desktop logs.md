@@ -22,8 +22,7 @@
    <br>      ![image](https://github.com/1015062E/howto/assets/160798406/27c60b97-44f2-4279-9a4b-e49df7b29eed)
 
 
-<br>![image](https://github.com/user-attachments/assets/8e6d069e-5ba9-4f45-9bc3-04dee90028d8)
-<br>
+<br>![image](https://github.com/user-attachments/assets/bfec31a0-e5cf-41a8-ab04-bad76b3aa78d)<br>
 
 4. Reproduce the issue (the shorter, the better).
    - If the issue is with Data(Table/Query) refresh issue, just click on **Refresh** button in the menu bar.
