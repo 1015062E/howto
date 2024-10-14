@@ -14,7 +14,8 @@
    <br>      ![image](https://github.com/1015062E/howto/assets/160798406/27c60b97-44f2-4279-9a4b-e49df7b29eed)
 
 
-<br>![image](https://github.com/1015062E/howto/assets/160798406/a4b3e144-c3f4-4d15-9a4f-7d01b7f288a5)
+<br>
+![image](https://github.com/user-attachments/assets/97b9f51f-b6e7-4486-b6fa-3ac5fb6a176a)
 <br>
 
 4. Reproduce the issue (the shorter, the better).
