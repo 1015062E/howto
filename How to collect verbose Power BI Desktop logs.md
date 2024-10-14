@@ -1,3 +1,11 @@
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
+
+
 1. Terminate all running Power BI Desktop processes on your computer.
 
 2. Clear the folder that contains the Desktop traces. 
