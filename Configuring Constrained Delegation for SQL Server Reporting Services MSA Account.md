@@ -8,6 +8,11 @@
 <td>[**Group Managed Service Accounts** aren't supported as a report server service account](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager?view=sql-server-ver16#choosing-an-account).  Not officially supported by MS but it might still work</td>
 </table>
 <br>
+<table>
+<td>WARNING</td>
+<td>Both client/User Account and SSRS Service account can't have "Account is sensitive and cannot be delegated" settings. Make sure there's no such limitation!(https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts)</td>
+</table>
+<br>
 
 # Configuring Constrained Delegation for SQL Server Reporting Services MSA Account
 
