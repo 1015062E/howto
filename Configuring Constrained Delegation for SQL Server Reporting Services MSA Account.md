@@ -1,3 +1,11 @@
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
+
+
 # Configuring Constrained Delegation for SQL Server Reporting Services MSA Account
 
 In this post, we'll walk through the steps to configure constrained delegation for a Managed Service Account (MSA) used by SQL Server Reporting Services. This guide is based on a real-world scenario and was generated with the assistance of AI.
