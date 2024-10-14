@@ -9,8 +9,6 @@
 </table>
 <br>
 
-[qqqqqq](qqqqqq)
-
 # Configuring Constrained Delegation for SQL Server Reporting Services MSA Account
 
 In this post, we'll walk through the steps to configure constrained delegation for a Managed Service Account (MSA) used by SQL Server Reporting Services. This guide is based on a real-world scenario and was generated with the assistance of AI.
