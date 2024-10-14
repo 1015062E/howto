@@ -16,7 +16,7 @@ The goal is to register the SPNs from the SQL Server service account onto the re
 
 First, we need to register SQL Server SPNs for `DOMAIN\SQLAGListener_MSA$`.
 
-Open PowerShell with administrative privileges and run the following commands:
+Open cmd with administrative privileges and run the following commands:
 
 ```cmd
 setspn -S MSSQLSvc/sqlserver.domain.com:port DOMAIN\SQLAGListener_MSA$
