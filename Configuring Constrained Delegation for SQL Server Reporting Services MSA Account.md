@@ -5,7 +5,7 @@
 </table>
 <table>
 <td>WARNING</td>
-<td>[**Group Managed Service Accounts** aren't supported as a report server service account](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager?view=sql-server-ver16#choosing-an-account)</td>
+<td>[**Group Managed Service Accounts** aren't supported as a report server service account](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager?view=sql-server-ver16#choosing-an-account).  Not officially supported by MS but it might still work</td>
 </table>
 <br>
 
