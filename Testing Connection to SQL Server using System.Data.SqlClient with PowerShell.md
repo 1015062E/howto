@@ -1,5 +1,13 @@
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
 
 [Reporting Services uses System.Data.SqlClient to connect to the Database Engine that hosts the report server database.](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager?view=sql-server-ver16#:~:text=Reporting%20Services%20uses%20System.Data.SqlClient%20to%20connect%20to%20the%20Database%20Engine%20that%20hosts%20the%20report%20server%20database.)
+
+[System.Data.SqlClient Namespace](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=net-8.0)
 
 ## Prerequisites
 
