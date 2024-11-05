@@ -1,7 +1,5 @@
-```markdown
-# Testing Connection to SQL Server using System.Data.SqlClient with PowerShell
 
-In this blog post, we'll walk through how to test a connection to a SQL Server database using the `System.Data.SqlClient` namespace in PowerShell. This can be particularly useful for verifying connectivity and troubleshooting connection issues.
+[Reporting Services uses System.Data.SqlClient to connect to the Database Engine that hosts the report server database.](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager?view=sql-server-ver16#:~:text=Reporting%20Services%20uses%20System.Data.SqlClient%20to%20connect%20to%20the%20Database%20Engine%20that%20hosts%20the%20report%20server%20database.)
 
 ## Prerequisites
 
@@ -42,27 +40,6 @@ $sqlConnection.Close()
 $dataset.Tables
 ```
 
-## Explanation
-
-1. **Creating the SQL Connection**: We start by creating a new SQL connection object and setting the connection string to connect to the `master` database on `localhost` using integrated security.
-
-2. **Executing the SQL Command**: We create a new SQL command object with the query `select @@version` to get the SQL Server version.
-
-3. **Opening the Connection**: The connection to the SQL Server is opened.
-
-4. **Filling the Dataset**: We use a SQL data adapter to execute the command and fill the dataset with the result.
-
-5. **Closing the Connection**: The connection to the SQL Server is closed.
-
-6. **Outputting the Result**: Finally, we output the result stored in the dataset.
-
-## Conclusion
-
 This script provides a simple way to test the connection to a SQL Server database using PowerShell and the `System.Data.SqlClient` namespace. You can modify the script to suit your needs, such as changing the query or the connection string to connect to a different database.
 
-Feel free to share this script with others who might find it useful!
-
----
-
 Happy scripting! 🚀
-```
