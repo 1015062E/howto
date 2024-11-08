@@ -11,11 +11,9 @@
 (Note: Select the DB first before running query below. The screenshot as above highlighed in red shows your catalog DB name)
 <br>![image](https://github.com/1015062E/howto/assets/160798406/663bcf00-105f-462b-9d87-ac7ba6ef6304)
 
-```
+```sql
 SELECT * FROM [dbo].[ExecutionLog3]
-WHERE DATEDIFF(day, [TimeStart], GETDATE()) <= 15 -- Filter only the logs generated within half of a month 
 ```
-<br>![image](https://github.com/1015062E/howto/assets/160798406/3138a604-a90c-4fc4-86e2-18315a40a838)<br>
 
 ##### Save the output as a .CSV file (CSV please , instead of other format because it would be much easier for us to import the data to our SQL Engine Database for analysis)
 Please **compress**, **COMPRESS**,**COMPRESS** the exported file to a .zip before uploading to the provided FTP File Transfer workspace. Thanks. 
