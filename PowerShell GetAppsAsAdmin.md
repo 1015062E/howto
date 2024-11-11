@@ -5,11 +5,7 @@
 </table>
 <br>
 
-Before you begin, ensure you have the `MicrosoftPowerBIMgmt` module installed. If not, the script will handle the installation for you.
-
-## PowerShell Script
-
-Here's the PowerShell script to export the Power BI apps data to a .csv file:
+Before you begin, ensure you have the `MicrosoftPowerBIMgmt` module installed. If not, the script will handle the installation for you. Here's the PowerShell script to export the Power BI apps data to a .csv file:
 
 ```powershell
 $DestPath = "C:\temp\GetAppsAsAdmin.csv" # Change the destination path accordingly!
