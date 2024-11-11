@@ -1,4 +1,9 @@
-
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
 
 Before you begin, ensure you have the `MicrosoftPowerBIMgmt` module installed. If not, the script will handle the installation for you.
 
