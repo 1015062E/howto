@@ -1,3 +1,4 @@
+```PowerShell
 # Set the tenant ID, client ID, and client secret
 $tenantId = ""
 $clientId = ""
@@ -26,3 +27,4 @@ $uri = "https://api.fabric.microsoft.com/v1/admin/workspaces"
 
 # Call the API
 Invoke-RestMethod -Uri $uri -Headers $authHeader -Method GET
+```
