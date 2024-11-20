@@ -1,3 +1,5 @@
+Demo https://learn.microsoft.com/en-us/rest/api/fabric/admin/workspaces/list-workspaces?tabs=HTTP
+
 ```PowerShell
 # Set the tenant ID, client ID, and client secret
 $tenantId = ""
