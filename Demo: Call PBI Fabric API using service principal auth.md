@@ -5,9 +5,9 @@
 </table>
 <br>
 
-Demo API:  https://learn.microsoft.com/en-us/rest/api/fabric/admin/workspaces/list-workspaces?tabs=HTTP
+Demo API:  [Admin API - List Workspaces](https://learn.microsoft.com/en-us/rest/api/fabric/admin/workspaces/list-workspaces?tabs=HTTP)
 
-It's an Admin API, make sure your SP is added to a security group and the group is granted below access in Admin Portal(https://app.powerbi.com/admin-portal/tenantSettings?experience=power-bi): 
+It's an Admin API, make sure your SP is added to a security group and the group is granted below access in [Admin Portal](https://app.powerbi.com/admin-portal): 
 <br>![image](https://github.com/user-attachments/assets/53664599-78ef-4c51-88ff-461fe9ebb63f)
 
 
