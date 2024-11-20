@@ -7,6 +7,11 @@
 
 Demo API:  https://learn.microsoft.com/en-us/rest/api/fabric/admin/workspaces/list-workspaces?tabs=HTTP
 
+It's an Admin API, make sure your SP is added to a security group and the group is granted below access in Admin Portal(https://app.powerbi.com/admin-portal/tenantSettings?experience=power-bi): 
+<br>![image](https://github.com/user-attachments/assets/53664599-78ef-4c51-88ff-461fe9ebb63f)
+
+
+
 ```PowerShell
 # Set the tenant ID, client ID, and client secret
 $tenantId = ""
@@ -37,3 +42,6 @@ $uri = "https://api.fabric.microsoft.com/v1/admin/workspaces"
 # Call the API
 Invoke-RestMethod -Uri $uri -Headers $authHeader -Method GET
 ```
+
+Sample Output: 
+<br><img width="1248" alt="image" src="https://github.com/user-attachments/assets/16cb05fd-7e96-4f50-af09-8f9ed3178778">
