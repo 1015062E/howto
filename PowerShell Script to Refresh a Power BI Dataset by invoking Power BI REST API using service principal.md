@@ -7,7 +7,7 @@
 
 This PowerShell script is used to refresh a Power BI dataset. The script uses the Power BI REST API to initiate a dataset refresh.
 
-Prerequisite : [Use Service Principal Authentication for Power BI REST APIs](https://github.com/guoqingsun-msft/guoqingsun/blob/main/Power%20BI/Use%20Service%20Principal%20Authentication%20for%20Power%20BI%20REST%20APIs.md)
+Prerequisite : [Use Service Principal Authentication for Power BI REST APIs](https://github.com/1015062E/howto/blob/main/How%20to%20Use%20Service%20Principal%20Authentication%20for%20Power%20BI%20REST%20APIs.md)
 
 ```PowerShell
 # Set the tenant ID, client ID, and client secret
