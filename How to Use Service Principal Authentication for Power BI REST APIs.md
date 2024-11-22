@@ -28,24 +28,31 @@ It might take a few minutes for these changes to take effect. Especially if you 
 
 ## You may find below screenshots helpful when doing above tasks. 
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/ea9d76b4-f00a-48b2-947e-173829991e04)
+<br>![image](https://github.com/user-attachments/assets/323483d5-49ff-4c40-aeba-cdcd821ec9ce)
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/f3f65ea4-38ad-464c-901c-807ed5a10ada)
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/41e3c90f-4c4d-40e5-aff3-0910cb0da8c1)
+<br>![image](https://github.com/user-attachments/assets/f1eddc66-9a47-481c-8057-1b1456f74a04)
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/d46bd1ac-96d3-44d4-bbc7-9edc2215b262)
+
+<br>![image](https://github.com/user-attachments/assets/ecf12a38-d3b2-4230-81f8-23105300c5eb)
+
+
+<br>!![image](https://github.com/user-attachments/assets/b8109169-8975-470a-978c-e4a6d3ff9402)
+
 
 // Select those items as needed, refer to Power BI REST API doc(https://learn.microsoft.com/en-us/rest/api/power-bi/) to see which permission you need to add according to what you want the service principal to do. 
 
 <br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/7263f935-dca1-4c93-964a-4e98b4660b73)
 
 // In case the 'admin consent required' is marked as 'Yes' but the 'Status' shows it's not approved, do : 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/4972dca0-427a-415c-abbd-314b8112dc1b)
+<br>![image](https://github.com/user-attachments/assets/8ce18332-55f4-4f64-917f-eed137a443b5)
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/019a95bd-af17-4eee-ac62-341e518cd982)
 
-<br>![image](https://github.com/guoqingsun-msft/guoqingsun/assets/85205970/643fc2a8-22a8-456f-8973-df3ff0ee8186)
+<br>![image](https://github.com/user-attachments/assets/50973d3f-279f-4ba3-826f-5a1b1ed7e94a)
+
+
+<br>![image](https://github.com/user-attachments/assets/35095bb4-51f1-4f6e-b2b7-217a5018759b)
+
 
 ## Documentation References
 
