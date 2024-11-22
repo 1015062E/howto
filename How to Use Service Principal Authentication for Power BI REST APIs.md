@@ -1,3 +1,7 @@
+Refer to MS doc - [Service principal is an authentication method that can be used to let an Microsoft Entra application access Power BI service content and APIs.](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal?tabs=azure-portal#get-started-with-a-service-principal)
+
+---
+
 # <Deprecated!!! Stop referring to this post>
 
 <br>
