@@ -1,4 +1,4 @@
-# <Deprecated!!! Stop refering to this post>
+# <Deprecated!!! Stop referring to this post>
 
 <br>
 <table>
