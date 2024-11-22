@@ -1,6 +1,6 @@
 Install Fiddler from https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe if it doesnt exist in the computer. 
 1. (1) If the issue occurs in Internet Browser, close all other browsers windows/tabs and keep only the tab we want to focus on.  (2) If the issue is with other client app (e.g. Power BI Desktop, Excel, SSMS, on-prem Gateway etc.) please ensure there's only one window of it is running.
-2. Launch fiddler, then click Tools >  Options
+2. Launch fiddler(**Run as Administrator**), then click Tools >  Options
 3. Click the ‘HTTPS’ tab.
 4. Verify the options are set as shown in this screenshot. (Confirm that the Decrypt HTTPS traffic is checked)<br>![image](https://github.com/1015062E/howto/assets/160798406/fe635c5e-b8ea-43f0-8bd6-465b9b899725)
 
