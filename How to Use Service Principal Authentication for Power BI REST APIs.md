@@ -7,9 +7,6 @@
 </table>
 <br>
 
-# How to Use Service Principal Authentication for Power BI REST APIs
-
-## Steps
 
 Here are the steps to use service principal authentication for Power BI REST APIs:
 
