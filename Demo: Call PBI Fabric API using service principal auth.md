@@ -41,6 +41,7 @@ $uri = "https://api.fabric.microsoft.com/v1/admin/workspaces"
 
 # Call the API
 Invoke-RestMethod -Uri $uri -Headers $authHeader -Method GET
+# $output | Out-File -FilePath C:\output.txt
 ```
 
 Sample Output: 
