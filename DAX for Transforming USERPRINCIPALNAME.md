@@ -10,9 +10,8 @@ In this post, we'll break down a DAX formula that transforms a user's principal 
 ## The DAX Formula
 
 ```dax
-VAR InternalDomain = "MngEnvMCAP523303.onmicrosoft.com"  // You need to replace this value with your own
-
 TransformedUPN = 
+VAR InternalDomain = "MngEnvMCAP523303.onmicrosoft.com"  // You need to replace this value with your own
 VAR CurrentUPN = USERPRINCIPALNAME()
 VAR UserNamePart = LEFT(CurrentUPN, FIND("@", CurrentUPN) - 1)
 VAR Domain = MID(CurrentUPN, FIND("@", CurrentUPN) + 1, LEN(CurrentUPN))
