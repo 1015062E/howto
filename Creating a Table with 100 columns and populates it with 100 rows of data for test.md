@@ -132,5 +132,11 @@ END;
 
 This loop runs from `@i = 1` to `@i = 100`, inserting a row with 'A' in every column during each iteration.
 
+### Test Output
+
+```sql
+SELECT * FROM [0_MIKE_TEST_DB].[dbo].[Table_with_100_columns_n_100_rows]
+```
+
 ![image](https://github.com/user-attachments/assets/e2a07ef5-71e5-43a0-847a-f9f66befd2ae)
 
