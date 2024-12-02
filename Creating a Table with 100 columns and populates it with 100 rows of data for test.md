@@ -132,4 +132,5 @@ END;
 
 This loop runs from `@i = 1` to `@i = 100`, inserting a row with 'A' in every column during each iteration.
 
-This script demonstrates how to create a table with a large number of columns and populate it with data using a loop. It's a useful example for understanding basic SQL operations and loop constructs.
+![image](https://github.com/user-attachments/assets/e2a07ef5-71e5-43a0-847a-f9f66befd2ae)
+
