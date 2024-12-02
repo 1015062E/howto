@@ -139,5 +139,4 @@ This loop runs from `@i = 1` to `@i = 100`, inserting a row with 'A' in every co
 SELECT * FROM [0_MIKE_TEST_DB].[dbo].[Table_with_100_columns_n_100_rows]
 ```
 
-![image](https://github.com/user-attachments/assets/e2a07ef5-71e5-43a0-847a-f9f66befd2ae)
-
+![image](https://github.com/user-attachments/assets/733f9e82-7176-432f-b823-d68c2a693795)
