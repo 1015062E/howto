@@ -33,7 +33,7 @@ in
 1. **Get Current UTC Time**: `DateTimeZone.UtcNow()` fetches the current UTC time.
 2. **Convert to Table**: The time is converted into a table format.
 3. **Set Column Type**: The column type is set to `datetimezone`.
-4. **Adjust Time Zone**: The time zone is adjusted to UTC+8 using `DateTimeZone.SwitchZone(_, 8)`.
+4. **Adjust Time Zone**: The time zone is adjusted to UTC+8 using `DateTimeZone.SwitchZone(_, 8)`. https://learn.microsoft.com/en-us/powerquery-m/datetimezone-switchzone
 5. **Rename Column**: The column is renamed to "Last Refreshed Date/Time".
 
 This query ensures that the time is consistently displayed in UTC+8, both in Power BI Desktop and Power BI Service.
