@@ -7,7 +7,7 @@
 
 ## Steps to Export SSAS Database
 
-1. **Open SSMS**: Launch (SQL Server Management Studio)[https://aka.ms/ssmsfullsetup] and connect to your Analysis Services instance.
+1. **Open SSMS**: Launch [SQL Server Management Studio](https://aka.ms/ssmsfullsetup) and connect to your Analysis Services instance.
 
 2. **Connect to the Database**: In the Object Explorer, expand the server node and then the Databases node to find your SSAS database.
 
