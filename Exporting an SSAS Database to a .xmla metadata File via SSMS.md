@@ -5,7 +5,7 @@
 </table>
 <br>
 
-## Steps to Export SSAS Database
+## Steps to Export SSAS Database metadata(schema)
 
 1. **Open SSMS**: Launch [SQL Server Management Studio](https://aka.ms/ssmsfullsetup) and connect to your Analysis Services instance.
 
