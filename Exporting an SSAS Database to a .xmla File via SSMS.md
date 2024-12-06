@@ -16,6 +16,8 @@
    - Select **Script Database As** > **CREATE To** > **File**.
    - Choose a location to save the .xmla file and provide a name for the file.
 
+![image](https://github.com/user-attachments/assets/b627718e-47ca-4985-acb4-400c937b8ead)
+
 4. **Save the Script**: The script will be generated and saved as a .xmla file at the specified location.
 
 This process will create an XMLA script that can be used to recreate the SSAS database schema. Note that this script does not include data, only the metadata (schema) of the database.
