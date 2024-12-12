@@ -56,7 +56,7 @@ If you want to make `PsGetSid` available from any directory, you can add the PsT
 
 ## Conclusion
 
-Using `PsGetSid` is a straightforward way to retrieve the SID for a domain user. This guide should help you get started quickly. If you have any questions or run into issues, feel free to reach out for assistance.
+Using `PsGetSid` is a straightforward way to retrieve the SID for a domain user. This guide should help you get started quickly. 
 
 ---
 
