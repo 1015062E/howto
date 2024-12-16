@@ -16,6 +16,33 @@ DWORD name: DisableStrictNameChecking
 DWORD value: 1
 ```
 
+Below is a PowerShell(Open PowerShell as Administrator) script that checks if the key exists and sets the value accordingly:
+
+```powershell
+# Define the registry path and key
+$regPath = "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"
+$regName = "DisableStrictNameChecking"
+$regValue = 1
+
+# Check if the key exists
+if (Test-Path $regPath) {
+    # Check if the value exists
+    if (Get-ItemProperty -Path $regPath -Name $regName -ErrorAction SilentlyContinue) {
+        # Update the value
+        Set-ItemProperty -Path $regPath -Name $regName -Value $regValue
+        Write-Output "Updated existing registry key."
+    } else {
+        # Create the value
+        New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
+        Write-Output "Created new registry key."
+    }
+} else {
+    # Create the key and set the value
+    New-Item -Path $regPath -Force | Out-Null
+    New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
+    Write-Output "Created new registry key and value."
+}
+```
 
 ## 2.Then use either of the following methods, as appropriate for your situation.
 
