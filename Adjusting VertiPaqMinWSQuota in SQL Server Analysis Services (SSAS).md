@@ -1,3 +1,10 @@
+<br>
+<table>
+<td>WARNING</td>
+<td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
+</table>
+<br>
+
 In this post, we'll walk through the steps to adjust the `VertiPaqMinWSQuota` setting in SQL Server Analysis Services (SSAS) to reserve less memory. This setting is particularly useful for managing memory usage in the Tabular mode of SSAS.
 
 ## What is VertiPaqMinWSQuota?
