@@ -22,7 +22,7 @@ Follow these steps to change the `VertiPaqMinWSQuota` value in your on-premises 
    - Use a text editor such as Notepad to open the `msmdsrv.ini` file.
 
 3. **Find and Edit the `VertiPaqMinWSQuota` Setting**:
-   - Look for the `<VertiPaqMinWSQuota>` tag in the file. (Add it inside **Vertipaq** block if non-existant)
+   - Look for the `<VertiPaqMinWSQuota>` tag in the file. (Add it inside **Vertipaq** block if it's Nonexistent)
      ![image](https://github.com/user-attachments/assets/f6a36641-3518-4531-bb77-71ec01821e91)
 
    - Change the value inside the tag to your desired percentage. For example, to set it to 10%, you would modify it to:
