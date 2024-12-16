@@ -16,33 +16,33 @@ DWORD name: DisableStrictNameChecking
 DWORD value: 1
 ```
 
-Below is a PowerShell(Open PowerShell as Administrator) script that checks if the key exists and sets the value accordingly:
-
-```powershell
-# Define the registry path and key
-$regPath = "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"
-$regName = "DisableStrictNameChecking"
-$regValue = 1
-
-# Check if the key exists
-if (Test-Path $regPath) {
-    # Check if the value exists
-    if (Get-ItemProperty -Path $regPath -Name $regName -ErrorAction SilentlyContinue) {
-        # Update the value
-        Set-ItemProperty -Path $regPath -Name $regName -Value $regValue
-        Write-Output "Updated existing registry key."
+    Below is a PowerShell(Open PowerShell as Administrator) script that checks if the key exists and sets the value accordingly:
+    
+    ```powershell
+    # Define the registry path and key
+    $regPath = "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"
+    $regName = "DisableStrictNameChecking"
+    $regValue = 1
+    
+    # Check if the key exists
+    if (Test-Path $regPath) {
+        # Check if the value exists
+        if (Get-ItemProperty -Path $regPath -Name $regName -ErrorAction SilentlyContinue) {
+            # Update the value
+            Set-ItemProperty -Path $regPath -Name $regName -Value $regValue
+            Write-Output "Updated existing registry key."
+        } else {
+            # Create the value
+            New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
+            Write-Output "Created new registry key."
+        }
     } else {
-        # Create the value
+        # Create the key and set the value
+        New-Item -Path $regPath -Force | Out-Null
         New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
-        Write-Output "Created new registry key."
+        Write-Output "Created new registry key and value."
     }
-} else {
-    # Create the key and set the value
-    New-Item -Path $regPath -Force | Out-Null
-    New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
-    Write-Output "Created new registry key and value."
-}
-```
+    ```
 
 ## 2.Then use either of the following methods, as appropriate for your situation.
 
@@ -74,3 +74,31 @@ Setting the `DisableLoopbackCheck` registry entry in the `HKEY_LOCAL_MACHINE\SYS
 6. In the **Value data** box, type `1`, and then click **OK**.
 7. Exit **Registry Editor**.
 8. **Restart** the computer and test if the issue still persits. (You must restart the computer for this change to take effect.)
+
+    Below is a PowerShell(Open PowerShell as Administrator) script that checks if the key exists and sets the value accordingly:
+    
+    ```powershell
+    # Define the registry path and key
+    $regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa"
+    $regName = "DisableLoopbackCheck"
+    $regValue = 1
+    
+    # Check if the key exists
+    if (Test-Path $regPath) {
+        # Check if the value exists
+        if (Get-ItemProperty -Path $regPath -Name $regName -ErrorAction SilentlyContinue) {
+            # Update the value
+            Set-ItemProperty -Path $regPath -Name $regName -Value $regValue
+            Write-Output "Updated existing registry key."
+        } else {
+            # Create the value
+            New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
+            Write-Output "Created new registry key."
+        }
+    } else {
+        # Create the key and set the value
+        New-Item -Path $regPath -Force | Out-Null
+        New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
+        Write-Output "Created new registry key and value."
+    }
+    ```
