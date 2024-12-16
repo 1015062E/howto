@@ -8,7 +8,6 @@
 
 Please follow the steps below to resolve the authentication issue related to the loopback check when accessing the Reporting Services URL.  
 
-
 ## 1.Set the DisableStrictNameChecking registry entry to 1. 
 ```ini
 Registry location: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
@@ -102,3 +101,5 @@ Setting the `DisableLoopbackCheck` registry entry in the `HKEY_LOCAL_MACHINE\SYS
         Write-Output "Created new registry key and value."
     }
     ```
+
+Ref: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied
