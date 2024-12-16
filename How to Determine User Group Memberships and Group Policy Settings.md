@@ -5,9 +5,7 @@
 </table>
 <br>
 
-# How to Determine User Group Memberships and Group Policy Settings
-
-In this post, we'll explore two essential commands for Windows administrators: `whoami /groups` and `gpresult /V`. These commands are useful for gathering information about user group memberships and Group Policy settings.
+In this post, we'll explore two essential commands : `whoami /groups` and `gpresult /V`. These commands are useful for gathering information about user group memberships and Group Policy settings.
 
 ## `whoami /groups`
 
