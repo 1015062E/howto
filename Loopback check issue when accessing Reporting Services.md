@@ -15,7 +15,7 @@ DWORD name: DisableStrictNameChecking
 DWORD value: 1
 ```
 
-    Below is a PowerShell(Open PowerShell as Administrator) script that checks if the key exists and sets the value accordingly:
+Below is a PowerShell(Open PowerShell as Administrator) script that checks if the key exists and sets the value accordingly:
     
     ```powershell
     # Define the registry path and key
