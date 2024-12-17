@@ -17,7 +17,6 @@ DWORD value: 1
 
 Below is a PowerShell(Open PowerShell as Administrator) script that checks if the key exists and sets the value accordingly:
     
-    ```powershell
     # Define the registry path and key
     $regPath = "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"
     $regName = "DisableStrictNameChecking"
@@ -41,8 +40,7 @@ Below is a PowerShell(Open PowerShell as Administrator) script that checks if th
         New-ItemProperty -Path $regPath -Name $regName -Value $regValue -PropertyType DWORD
         Write-Output "Created new registry key and value."
     }
-    ```
-
+    
 ## 2.Then use either of the following methods, as appropriate for your situation.
 
 ### [Method1 (Recommended): Create Local Security Authority Host Names for NTLM Authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied#method-1-recommended-create-the-local-security-authority-host-names-that-can-be-referenced-in-a-ntlm-authentication-request)
