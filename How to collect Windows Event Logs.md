@@ -2,11 +2,6 @@
 <table>
 <td>WARNING</td>
 <td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
-</table>
-</br>
-
-<br>
-<table>
 <td>WARNING</td>
 <td>DON'T forget to compress(zip) the files exported to a .zip file before uploadingto the provided workspace!</td>
 </table>
