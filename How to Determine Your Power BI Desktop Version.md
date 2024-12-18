@@ -9,10 +9,10 @@
 ```PowerShell
 Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*' | Where-Object { $_.DisplayName -like "Microsoft Power BI Desktop*" } | Select-Object DisplayName, DisplayVersion
 ```
-![image](https://github.com/user-attachments/assets/d3f1288c-e181-4ff7-8753-a1948533573f)
+   ![image](https://github.com/user-attachments/assets/d3f1288c-e181-4ff7-8753-a1948533573f)
 
 
 ```PowerShell
 Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*' | Where-Object { $_.DisplayName -eq "Microsoft Power BI Desktop (x64)" } | Select-Object DisplayName, DisplayVersion
 ```
-![image](https://github.com/user-attachments/assets/0e6a2a48-5ce0-437a-9524-0749219bd4f6)
+   ![image](https://github.com/user-attachments/assets/0e6a2a48-5ce0-437a-9524-0749219bd4f6)
