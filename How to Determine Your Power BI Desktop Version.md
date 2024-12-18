@@ -3,7 +3,8 @@
 2. Click on the **File** menu located at the top left corner of the application window.
 3. From the dropdown menu, select **About** at the bottom left.
 4. A dialog box will appear displaying various information about Power BI Desktop, including the **version number**.
-5. Here's an example of what you might see:<br><img width="368" alt="image" src="https://github.com/1015062E/howto/assets/160798406/cc270036-5f0c-44b7-be40-07d3ce136efb">
+5. Here's an example of what you might see:
+    <br><img width="368" alt="image" src="https://github.com/1015062E/howto/assets/160798406/cc270036-5f0c-44b7-be40-07d3ce136efb">
 
 ### Or run PowerShell command : 
 ```PowerShell
