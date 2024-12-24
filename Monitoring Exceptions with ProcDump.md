@@ -5,8 +5,6 @@
 </table>
 <br>
 
-# Monitoring Exceptions with ProcDump
-
 ## Downloading and Setting Up ProcDump
 
 1. **Download ProcDump**:
