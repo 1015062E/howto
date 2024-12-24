@@ -40,7 +40,7 @@ This guide provides step-by-step instructions on how to capture and analyze HTTP
    ```
 
 6. **Upload Outputs**:
-   Collect the following output files and upload them to the workspace(select all these generated files, compress to a single .zip file):
+   Collect the following output files(select all these generated files, compress to a single .zip file) and upload them to the workspace:
    - `httptrace.csv`
    - `httptrace.etl`
    - `httptrace.xml`
@@ -50,27 +50,14 @@ This guide provides step-by-step instructions on how to capture and analyze HTTP
 ### `logman` Command
 - **`logman start httptrace -p Microsoft-Windows-HttpService 0xFFFF -o httptrace.etl -ets`**:
   - **`httptrace`**: Name of the trace session.
-  - **`-p Microsoft-Windows-HttpService 0xFFFF`**: Specifies the provider and event level.
+  - **`-p Microsoft-Windows-HttpService 0xFFFF`**: Specifies the provider(This provider captures events related to HTTP services, including request and response details, performance metrics, and error information) and event level.
   - **`-o httptrace.etl`**: Output file for the trace data.
-  - **`-ets`**: Directs the command to interact with Event Trace Sessions directly.
+  - **`-ets`**: Directs the command to interact with Event Trace Sessions directly(it ensures that the trace session starts immediately and captures events in real-time).
 
 ### `tracerpt` Command
 - **`tracerpt.exe httptrace.etl –of CSV -o httptrace.csv`**: Converts the ETL file to CSV format.
 - **`tracerpt.exe httptrace.etl -of XML -o httptrace.xml`**: Converts the ETL file to XML format.
 
-## Additional Information
-
-### Event Trace Sessions (ETS)
-The `-ets` option in the `logman` command ensures that the trace session starts immediately and captures events in real-time.
-
-### Provider: Microsoft-Windows-HttpService
-This provider captures events related to HTTP services, including request and response details, performance metrics, and error information.
-
-### Troubleshooting Tips
-- **CSV vs. XML**: CSV files are easier to read and analyze using spreadsheet tools, while XML files provide more detailed and structured data.
-- **Alternative Tools**: Consider using Event Viewer or PowerShell for additional analysis and conversion options.
-
-Feel free to reach out if you have any questions or need further assistance!
 
 ---
 
