@@ -40,7 +40,7 @@ This guide provides step-by-step instructions on how to capture and analyze HTTP
    ```
 
 6. **Upload Outputs**:
-   Collect the following output files and upload them to the workspace:
+   Collect the following output files and upload them to the workspace(select all these generated files, compress to a single .zip file):
    - `httptrace.csv`
    - `httptrace.etl`
    - `httptrace.xml`
