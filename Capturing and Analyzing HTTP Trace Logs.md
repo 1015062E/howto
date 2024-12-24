@@ -11,7 +11,7 @@ This guide provides step-by-step instructions on how to capture and analyze HTTP
 
 ## Steps to Capture HTTP Trace Logs
 
-1. **Remote to the server** where the Windows service in question is installed and run CMD as an administrator. Ensure you are in the correct directory as the log will be generated there. For example, create a temp folder under C and navigate to it:
+1. **Remote to the server** where the Windows service in question is installed and run CMD(command prompt) as an administrator. Ensure you are in the correct directory as the log will be generated there. For example, create a temp folder under C and navigate to it:
    ```bash
    mkdir C:\temp
    cd C:\temp
@@ -24,10 +24,10 @@ This guide provides step-by-step instructions on how to capture and analyze HTTP
    ```
 
 3. **Reproduce the Issue**:
-   After starting the trace, reproduce the issue you are troubleshooting.
+   After starting the trace above, reproduce the issue you are troubleshooting.
 
 4. **Stop Capture**:
-   Run the following command to stop capturing:
+   Run the following command to stop capturing after the issue is reproduced:
    ```bash
    logman stop httptrace -ets
    ```
