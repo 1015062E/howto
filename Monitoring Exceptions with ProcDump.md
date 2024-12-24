@@ -63,4 +63,3 @@ This command will create a full memory dump of the process with PID 1234 and sav
 
 - https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
 - https://www.windowscentral.com/how-use-procdump-create-dump-files-windows-10
-- CyberArk Community: Configure ProcDump
