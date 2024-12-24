@@ -58,11 +58,15 @@ This guide provides step-by-step instructions on how to capture and analyze HTTP
 - **`tracerpt.exe httptrace.etl –of CSV -o httptrace.csv`**: Converts the ETL file to CSV format.
 - **`tracerpt.exe httptrace.etl -of XML -o httptrace.xml`**: Converts the ETL file to XML format.
 
-
+<br>
 https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/logman
+<br>
 https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/logman-start-stop
+<br>
 https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tracerpt
+<br>
 https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/survey-of-software-tracing-tools
+<br>
 
 
 ---
