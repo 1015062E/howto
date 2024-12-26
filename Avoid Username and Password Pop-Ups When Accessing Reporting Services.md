@@ -29,6 +29,8 @@ Then :
 2. **Create or Edit a GPO**: Right-click on the domain or organizational unit (OU) where you want to apply the policy. Select "Create a GPO in this domain, and Link it here..." or choose an existing GPO and select "Edit".
 3. **Navigate to the Policy Setting**: Go to `User Configuration` > `Policies` > `Administrative Templates` > `Windows Components` > `Internet Explorer` > `Internet Control Panel` > `Security Page`.
 4. **Configure Site to Zone Assignment List**: Double-click on "Site to Zone Assignment List". Enable the policy and click "Show...". In the "Value name" column, enter `http(s)://xxx.com/Reports`. In the "Value" column, enter `2` (which corresponds to the Trusted Sites zone).
+  <br>![image](https://github.com/user-attachments/assets/55332ee8-8acf-4bc3-9ae1-71acca0d3344)
+
 5. **Apply and Update Group Policy**: Click "OK" to save the settings. Close the Group Policy Management Editor. On the client machines, run `gpupdate /force` to apply the new policy settings.
 
 ### To configure user authentication in trusted sites to "Automatic logon with current username and password" using Group Policy:
