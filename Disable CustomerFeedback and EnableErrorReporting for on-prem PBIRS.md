@@ -5,6 +5,8 @@
 </table>
 <br>
 
+
+
 #### 1.For on-prem Power BI Report Server: Change below registry values to prevent PBIRS from sending requests https://eastus-8.in.applicationinsights.azure.com//v2/track (NOTE: Need to **restart** the computer to make the change take effect)
 
 ```ini
@@ -91,3 +93,4 @@ if (Test-Path $regPath) {
 
 ![image](https://github.com/user-attachments/assets/4d1a1bd9-a53a-4c5b-a63c-6279d8238638)
 
+<br>Ref : https://learn.microsoft.com/en-us/sql/sql-server/usage-and-diagnostic-data-configuration-for-sql-server?view=sql-server-ver16
