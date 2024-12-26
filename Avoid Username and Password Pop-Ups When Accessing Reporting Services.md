@@ -39,3 +39,18 @@ Then :
 
 ![image](https://github.com/user-attachments/assets/08195ca1-ffdc-4fb1-b40c-1a60c40f6170)
 
+---
+
+https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/ie-security-zones-registry-entries
+
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1
+Zones\1  -->  Local Intranet
+Key:  1A00   User Authentication: Logon 
+Value :  10000
+
+Value       Setting
+---------------------------------------------------------------
+0x00000000  Automatically logon with current username and password
+0x00010000  Prompt for user name and password
+0x00020000  Automatic logon only in the Intranet zone
+0x00030000  Anonymous logon
