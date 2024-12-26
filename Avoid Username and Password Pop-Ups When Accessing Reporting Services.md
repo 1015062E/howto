@@ -43,6 +43,7 @@ Then :
 
 https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/ie-security-zones-registry-entries
 
+```
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1
 Zones\1  -->  Local Intranet
 Key:  1A00   User Authentication: Logon 
@@ -54,3 +55,4 @@ Value       Setting
 0x00010000  Prompt for user name and password
 0x00020000  Automatic logon only in the Intranet zone
 0x00030000  Anonymous logon
+```
