@@ -1,8 +1,8 @@
 <br><table><td>WARNING</td><td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td></table><br>
 
-# Understanding the Difference Between Two Queries for `$SYSTEM.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS`
-
 > _Disclaimer: This content was generated with the assistance of AI and should be verified for accuracy and relevance to your specific use case._
+
+## Understanding the Difference Between Two Queries for `$SYSTEM.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS`
 
 When working with metadata in environments like Microsoft Analysis Services (SSAS) or Azure Analysis Services (AAS), you might encounter different ways to query the `$System.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS` system view. This blog post explains the differences between two common query patterns:
 
