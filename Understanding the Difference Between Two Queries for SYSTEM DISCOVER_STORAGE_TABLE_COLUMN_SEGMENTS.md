@@ -1,5 +1,4 @@
 <br><table><td>WARNING</td><td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td></table><br>
-
 > _Disclaimer: This content was generated with the assistance of AI and should be verified for accuracy and relevance to your specific use case._
 
 ## Understanding the Difference Between Two Queries for `$SYSTEM.DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS`
