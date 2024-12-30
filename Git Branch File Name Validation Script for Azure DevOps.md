@@ -45,7 +45,7 @@ Write-Host "Switching to branch $branch"
 git checkout $branch | Out-Null
 
 # Forbidden characters to check
-$forbiddenChars = @('>', '<', ':', '"', '/', '\', '|', '*', '?')
+$forbiddenChars = @('>', '<', ':', '"', '\', '|', '*', '?')
 
 # Check for forbidden characters in file names (excluding files starting with '.' or ending in .png)
 Write-Host "Checking for forbidden characters..."
@@ -56,9 +56,15 @@ foreach ($file in $files) {
         continue
     }
 
-    foreach ($char in $forbiddenChars) {
-        if ($file.Contains($char)) {
-            Write-Host "Forbidden character '$char' found in: $file" -ForegroundColor Yellow
+    # Split the file path into parts by '/'
+    $fileParts = $file -split '/'
+    
+    # Check each part of the file path
+    foreach ($part in $fileParts) {
+        foreach ($char in $forbiddenChars) {
+            if ($part.Contains($char)) {
+                Write-Host "Forbidden character '$char' found in: $file" -ForegroundColor Yellow
+            }
         }
     }
 }
