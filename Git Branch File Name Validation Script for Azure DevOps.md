@@ -126,6 +126,9 @@ Additionally, the script skips files starting with a dot (`.`) or having `.png` 
    .\check_branch.ps1
    ```
 
+### Ref: 
+<br>https://learn.microsoft.com/en-us/fabric/cicd/git-integration/intro-to-git-integration?tabs=azure-devops#directory-name-limitations
+
 ### Benefits
 
 By using this script, you can easily ensure that your file names comply with Azure DevOps' restrictions, avoiding issues when committing or pushing changes. It automates the process, reducing the manual effort involved in checking file names before pushing to the repository.
