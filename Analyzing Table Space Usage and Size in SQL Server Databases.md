@@ -40,6 +40,10 @@ ORDER BY
     TotalSpaceMB DESC, t.Name
 ```
 
+### Output Example
+<br><img width="745" alt="image" src="https://github.com/user-attachments/assets/9a7f8d46-af29-4d36-bf08-243ec021bbb4" />
+
+
 Below is a breakdown of its purpose and functionality:
 
 #### Columns Retrieved
@@ -69,12 +73,6 @@ This query can support:
 1. **Performance Optimization**: Identifying large tables consuming excessive space.
 2. **Capacity Planning**: Monitoring database growth and planning for storage expansion.
 3. **Maintenance Tasks**: Reclaiming unused space or reorganizing fragmented storage.
-
-### Output Example
-| Table Name | Schema Name | Rows    | Total Space (MB) | Used Space (MB) | Unused Space (MB) |
-|------------|-------------|---------|------------------|-----------------|-------------------|
-| Table1     | Schema1     | 100000  | 1024.00          | 800.00          | 224.00            |
-| Table2     | Schema2     | 50000   | 512.00           | 400.00          | 112.00            |
 
 ### Caveats and Considerations
 - This query is read-only and safe to execute on production databases.
