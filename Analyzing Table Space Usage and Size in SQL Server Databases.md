@@ -40,9 +40,7 @@ ORDER BY
     TotalSpaceMB DESC, t.Name
 ```
 
-### Output Example
 <br><img width="745" alt="image" src="https://github.com/user-attachments/assets/9a7f8d46-af29-4d36-bf08-243ec021bbb4" />
-
 
 Below is a breakdown of its purpose and functionality:
 
