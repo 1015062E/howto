@@ -24,15 +24,15 @@ First, create a backup of your repository by downloading a ZIP file from GitHub:
 
 #### 3. Republish the Repository with the Correct Account
    Note: Check your Git configuration to ensure it is set to use the correct username and email:<br>
-      ```bash
+      <br>```bash
       git config --global user.name
       git config --global user.email
-      ```
+      ```<br>
    <br>If these commands return the wrong account details, you can update them:
-      ```bash
+      <br>```bash
       git config --global user.name "gitaccount"
       git config --global user.email "your-email@example.com"
-      ```
+      ```<br>
 <br>
 1. **Log out** of any incorrect accounts and **log in** to the correct account (`gitaccount`).
 2. Create a new repository on GitHub with the same name (`reponame`).
