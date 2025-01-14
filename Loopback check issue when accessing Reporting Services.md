@@ -101,3 +101,37 @@ Setting the `DisableLoopbackCheck` registry entry in the `HKEY_LOCAL_MACHINE\SYS
     ```
 
 Ref: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/accessing-server-locally-with-fqdn-cname-alias-denied
+
+---
+### Difference Between FQDN and CNAME
+
+- **FQDN (Fully Qualified Domain Name)**: The complete domain name for a specific computer or host on the internet. Example: `www.example.com`.
+- **CNAME (Canonical Name) Record**: A DNS record that maps an alias name to a true (canonical) domain name. Example: `blog.example.com` as a CNAME for `example.com`.
+
+### Why Do We Need CNAME Records?
+
+**Purpose**: CNAME records create aliases for domain names, simplifying DNS management and providing flexibility.
+
+**Use Cases**:
+- **Simplified Management**: Update a single A record and have multiple CNAMEs point to it.
+- **Multiple Services**: Different services (like `www.example.com` and `ftp.example.com`) can point to the same IP address using CNAMEs.
+- **Consistency**: Ensures all related domains point to the same IP address, reducing the risk of errors.
+
+### BackConnectionHostNames Registry and Authentication
+
+**NTLM Authentication**: The `BackConnectionHostNames` registry entry resolves issues with NTLM authentication when accessing a server locally using its FQDN or CNAME alias.
+
+**Kerberos Authentication**: For Kerberos, you need to add Service Principal Names (SPNs) and ensure proper DNS settings. The `BackConnectionHostNames` registry entry does not directly affect Kerberos authentication.
+
+**When to Change**:
+- **NTLM**: Change the `BackConnectionHostNames` registry entry when facing authentication issues accessing local resources using FQDN or CNAME.
+- **Kerberos**: Ensure SPNs are correctly configured and DNS settings are accurate.
+
+### Local Security Authority (LSA)
+
+**What is LSA?**: The Local Security Authority (LSA) is a component of the Windows operating system that enforces security policies, manages user logins, and handles authentication.
+
+**Why It's Involved**: LSA handles authentication processes, including NTLM and Kerberos. The `BackConnectionHostNames` registry entry helps LSA recognize specific host names during NTLM authentication requests.
+
+**Remote or Domain Security Authority**: In a domain environment, the Domain Controller (DC) performs similar functions for domain-wide authentication and security policies, using the Key Distribution Center (KDC) for Kerberos authentication.
+---
