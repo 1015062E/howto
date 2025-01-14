@@ -26,12 +26,12 @@ First, create a backup of your repository by downloading a ZIP file from GitHub:
    Note: Check your Git configuration to ensure it is set to use the correct username and email:<br>
       <br>```bash
       git config --global user.name
-      git config --global user.email
+      <br>git config --global user.email
       ```<br>
    <br>If these commands return the wrong account details, you can update them:
       <br>```bash
       git config --global user.name "gitaccount"
-      git config --global user.email "your-email@example.com"
+      <br>git config --global user.email "your-email@example.com"
       ```<br>
 <br>
 1. **Log out** of any incorrect accounts and **log in** to the correct account (`gitaccount`).
