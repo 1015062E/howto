@@ -134,4 +134,5 @@ Ref: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/ac
 **Why It's Involved**: LSA handles authentication processes, including NTLM and Kerberos. The `BackConnectionHostNames` registry entry helps LSA recognize specific host names during NTLM authentication requests.
 
 **Remote or Domain Security Authority**: In a domain environment, the Domain Controller (DC) performs similar functions for domain-wide authentication and security policies, using the Key Distribution Center (KDC) for Kerberos authentication.
+
 ---
