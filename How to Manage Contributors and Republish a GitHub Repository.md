@@ -48,6 +48,18 @@ First, create a backup of your repository by downloading a ZIP file from GitHub:
 
 ### Ensuring Only the Correct Account Can Make Changes
 
+#### Check Your Git Configuration
+Check your Git configuration to ensure it is set to use the correct username and email:
+```bash
+git config --global user.name
+git config --global user.email
+```
+If these commands return the wrong account details, you can update them:
+```bash
+git config --global user.name "gitaccount"
+git config --global user.email "your-email@example.com"
+```
+
 #### Remove Unwanted Collaborators
 1. Go to your repository on GitHub.
 2. Click on **Settings**.
