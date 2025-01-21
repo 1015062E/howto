@@ -10,7 +10,8 @@ Follow the steps below to change the Reporting Services logging level to verbose
    | On-Prem Power BI Report Server | C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin\ReportingServicesService.exe.config |
 
 2. **Update the Configuration File**
-   Open the `ReportingServicesService.exe.config` file in a text editor and locate the following sections: <br>![image](https://github.com/1015062E/howto/assets/160798406/84337576-6700-461e-ac96-6b589025f382)
+   Open the `ReportingServicesService.exe.config` file in a text editor and locate the following sections: <br>![image](https://github.com/user-attachments/assets/1ecec531-14b2-4652-b1c6-85824b48e720)
+
 
    Change the `value` of the `DefaultTraceSwitch` and `Components` to `4`. This sets the logging level to verbose mode.
 
