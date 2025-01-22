@@ -92,3 +92,5 @@ Replace `"MSSQL16.InstanceName"` with the actual instance name of your SQL Serve
 ### Conclusion
 
 This script allows you to retrieve the product key for a specified SQL Server instance. Ensure you replace the placeholder instance name with the actual instance name of your SQL Server installation.
+
+REF https://www.easeus.com/key-finder/find-microsoft-sql-server-product-key.html?srsltid=AfmBOoq7LnRBLpIQcgiujht2Ag3w6pMBKIRGeHZWWi2ziuOvKmJGvkGH
