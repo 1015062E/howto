@@ -19,67 +19,76 @@ The provided PowerShell script performs the following steps:
 
 ### Dynamic Instance Detection
 
-To make the script more dynamic, we updated it to automatically detect the installed SQL Server instances and their versions. Below is the updated script:
+To make the script more dynamic, we initially attempted to automatically detect the installed SQL Server instances and their versions. However, we encountered issues with the registry path. Therefore, we updated the script to explicitly specify the instance name.
+
+### Updated PowerShell Script
+
+Here is the updated script where you can specify the instance name:
 
 ```powershell
-function GetSqlServerProductKey {
+function GetSqlServerProductKey($InstanceName) {
     $localmachine = [Microsoft.Win32.RegistryHive]::LocalMachine
     $defaultview = [Microsoft.Win32.RegistryView]::Default
     $reg = [Microsoft.Win32.RegistryKey]::OpenBaseKey($localmachine, $defaultview)
-    $instancesKey = "SOFTWARE\Microsoft\Microsoft SQL Server\Instance Names\SQL"
-    $instances = $reg.OpenSubKey($instancesKey).GetValueNames()
+    $versionKey = "SOFTWARE\Microsoft\Microsoft SQL Server\$InstanceName\Setup"
+    $setupKey = $reg.OpenSubKey($versionKey)
 
-    foreach ($instance in $instances) {
-        $versionKey = "SOFTWARE\Microsoft\Microsoft SQL Server\$instance\Setup"
-        $encodedData = $reg.OpenSubKey($versionKey).GetValue("DigitalProductID")
-        $reg.Close()
+    if ($setupKey -eq $null) {
+        Write-Output "Setup key not found for instance: $InstanceName"
+        return
+    }
 
-        try {
-            $binArray = ($encodedData)[0..66]
-            $productKey = $null
+    $encodedData = $setupKey.GetValue("DigitalProductID")
+    $setupKey.Close()
 
-            $charsArray = "B", "C", "D", "F", "G", "H", "J", "K", "M", "P", "Q", "R", "T", "V", "W", "X", "Y", "2", "3", "4", "6", "7", "8", "9"
+    try {
+        $binArray = ($encodedData)[0..66]
+        $productKey = $null
 
-            $isNKey = ([math]::truncate($binArray[14] / 0x6) -band 0x1) -ne 0
-            if ($isNKey) {
-                $binArray[14] = $binArray[14] -band 0xF7
-            }
+        $charsArray = "B", "C", "D", "F", "G", "H", "J", "K", "M", "P", "Q", "R", "T", "V", "W", "X", "Y", "2", "3", "4", "6", "7", "8", "9"
 
-            $last = 0
-
-            for ($i = 24; $i -ge 0; $i--) {
-                $k = 0
-                for ($j = 14; $j -ge 0; $j--) {
-                    $k = $k * 256 -bxor $binArray[$j]
-                    $binArray[$j] = [math]::truncate($k / 24)
-                    $k = $k % 24
-                }
-                $productKey = $charsArray[$k] + $productKey
-                $last = $k
-            }
-
-            if ($isNKey) {
-                $part1 = $productKey.Substring(1, $last)
-                $part2 = $productKey.Substring(1, $productKey.Length - 1)
-                if ($last -eq 0) {
-                    $productKey = "N" + $part2
-                } else {
-                    $productKey = $part2.Insert($part2.IndexOf($part1) + $part1.Length, "N")
-                }
-            }
-
-            $productKey = $productKey.Insert(20, "-").Insert(15, "-").Insert(10, "-").Insert(5, "-")
-        } catch {
-            $productKey = "Cannot decode product key."
+        $isNKey = ([math]::truncate($binArray[14] / 0x6) -band 0x1) -ne 0
+        if ($isNKey) {
+            $binArray[14] = $binArray[14] -band 0xF7
         }
 
-        Write-Output "Instance: $instance, Product Key: $productKey"
+        $last = 0
+
+        for ($i = 24; $i -ge 0; $i--) {
+            $k = 0
+            for ($j = 14; $j -ge 0; $j--) {
+                $k = $k * 256 -bxor $binArray[$j]
+                $binArray[$j] = [math]::truncate($k / 24)
+                $k = $k % 24
+            }
+            $productKey = $charsArray[$k] + $productKey
+            $last = $k
+        }
+
+        if ($isNKey) {
+            $part1 = $productKey.Substring(1, $last)
+            $part2 = $productKey.Substring(1, $productKey.Length - 1)
+            if ($last -eq 0) {
+                $productKey = "N" + $part2
+            } else {
+                $productKey = $part2.Insert($part2.IndexOf($part1) + $part1.Length, "N")
+            }
+        }
+
+        $productKey = $productKey.Insert(20, "-").Insert(15, "-").Insert(10, "-").Insert(5, "-")
+    } catch {
+        $productKey = "Cannot decode product key."
     }
+
+    Write-Output "Instance: $InstanceName, Product Key: $productKey"
 }
 
-GetSqlServerProductKey
+# Example usage
+GetSqlServerProductKey -InstanceName "MSSQL16.InstanceName"
 ```
+
+Replace `"MSSQL16.InstanceName"` with the actual instance name of your SQL Server 2022 installation. This script will now target the specified instance directly.
 
 ### Conclusion
 
-This script will loop through all SQL Server instances on the machine, retrieve their product keys, and print them out. This approach ensures that the script is adaptable to different SQL Server versions and instances.
+This script allows you to retrieve the product key for a specified SQL Server instance. Ensure you replace the placeholder instance name with the actual instance name of your SQL Server installation.
