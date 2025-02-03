@@ -4,7 +4,7 @@ Disclaimer: This content was generated with the assistance of AI and should be v
 
 ## Changing Server instance property for Analysis Services
 
-```xmla
+```XML
 <Alter AllowCreate="true" ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
 	<Object />
 	<ObjectDefinition>
