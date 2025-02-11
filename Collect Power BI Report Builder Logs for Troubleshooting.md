@@ -15,7 +15,7 @@ The configuration file and `Traces` folder are located at:
 %LocalAppData%\Microsoft\Power BI Report Builder\15.7
 ```
 
-#### Modify the Logging Configuration
+#### Modify the Logging Configuration(https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel?view=netframework-4.6.2)
 1. Open the `user.config` file.
 2. Change the `LoggingTraceLevel` property from:
    ```
