@@ -33,14 +33,6 @@ bcp [DatabaseName].[dbo].[TableName] out "C:\Backup\TableName.bcp" -c -T -S Your
 Before importing the table, ensure the table exists in the target database. If it does not exist, manually create it based on the original schema.
 
 #### Check if the Table Exists
-Run the following SQL query in **SSMS**:
-
-```sql
-USE [DatabaseName];
-GO
-SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'TableName';
-```
-
 If the table does not exist, you must **manually create** it before proceeding with the import.
 
 #### Create the Table (If Needed)
