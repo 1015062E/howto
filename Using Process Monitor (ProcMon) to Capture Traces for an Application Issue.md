@@ -22,16 +22,12 @@ With ProcMon running, reproduce the issue you are experiencing with the applicat
 ## Step 5: Stop Collecting Traces
 
 Once you have reproduced the issue, stop collecting traces by clicking on the `Capture` button in the toolbar or by pressing `Ctrl+E`.
-<br>![image](https://github.com/1015062E/howto/assets/160798406/46b94ea9-717d-4c74-b50e-f225262048bb)<br>
+<br>![image](https://github.com/user-attachments/assets/921344d5-176d-464b-9026-3c845ba016ef)<br>
 
 ## Step 6: Save the Trace
 
 Save the trace by going to `File > Save` and selecting a location to save the trace file. (Note down the location else you might forget where it was saved)
-<br>![image](https://github.com/1015062E/howto/assets/160798406/aeba4ba6-766b-46b6-9610-f5ba6d231416)<br>
 
 ## Step 7: Compress and Upload the Trace
 
 **Compress** the trace file and then upload it to the workspace shared with you for uploading files.
-<br>![image](https://github.com/1015062E/howto/assets/160798406/c504b7dd-b9e9-4791-b68f-af1350b1bdd8)<br>
-
-<br>If you have any questions or need further assistance, feel free to ask.
