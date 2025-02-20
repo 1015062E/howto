@@ -33,7 +33,7 @@ Here are two examples of XMLA scripts for the `Synchronize` command:
 {
   "synchronize": {
     "database": "databasename",
-    "source": "Provider=MSOLAP.8;Data Source=SourceSSAS\\InstanceName;Integrated Security=SSPI;Initial Catalog=databasename>",
+    "source": "Provider=MSOLAP.8;Data Source=SourceSSAS\InstanceName;Integrated Security=SSPI;Initial Catalog=databasename>",
     "synchronizeSecurity": "copyAll",
     "applyCompression": true
   }
@@ -46,7 +46,7 @@ Here are two examples of XMLA scripts for the `Synchronize` command:
 <Batch Transaction="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <Synchronize xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
     <Source>
-      <ConnectionString>Provider=MSOLAP.8;Data Source=SourceSSAS\\InstanceName;Integrated Security=SSPI;Initial Catalog=DatabaseName</ConnectionString>
+      <ConnectionString>Provider=MSOLAP.8;Data Source=SourceSSAS\InstanceName;Integrated Security=SSPI;Initial Catalog=DatabaseName</ConnectionString>
       <Object>
         <DatabaseID>DatabaseName</DatabaseID>
       </Object>
