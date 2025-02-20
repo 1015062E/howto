@@ -33,7 +33,7 @@ Here are two examples of XMLA scripts for the `Synchronize` command:
 {
   "synchronize": {
     "database": "databasename",
-    "source": "Provider=MSOLAP.8;Data Source=SourceSSAS\\InstanceName;Integrated Security=SSPI;Initial Catalog=databasename>",
+    "source": "Provider=MSOLAP.8;Data Source=SourceSSAS\\InstanceName;Integrated Security=SSPI;Initial Catalog=databasename",
     "synchronizeSecurity": "copyAll",
     "applyCompression": true
   }
