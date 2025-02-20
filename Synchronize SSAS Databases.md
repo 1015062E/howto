@@ -1,4 +1,3 @@
-```markdown
 <br><table><td>WARNING</td><td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td></table><br>
 
 ## Synchronize SSAS Databases
@@ -79,3 +78,6 @@ You can synchronize an SSAS database from SSAS 2017 to SSAS 2022, but ensure the
 ### Conclusion
 
 Synchronizing SSAS databases is a vital task for maintaining data consistency across servers. By following the steps, best practices, and cautions outlined in this guide, you can effectively synchronize your databases while minimizing risks.
+
+<br>https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/synchronize-analysis-services-databases?view=asallproducts-allversions
+<br>https://learn.microsoft.com/en-us/analysis-services/multidimensional-models-scripting-language-assl-xmla/backing-up-restoring-and-synchronizing-databases-xmla?view=asallproducts-allversions
