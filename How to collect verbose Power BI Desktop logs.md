@@ -28,8 +28,6 @@
    <br>![image](https://github.com/user-attachments/assets/a16680e3-103e-41f5-984c-43eacb63bb0e)
 
 
-<br>![image](https://github.com/user-attachments/assets/bfec31a0-e5cf-41a8-ab04-bad76b3aa78d)<br>
-
 4. Reproduce the issue (the shorter, the better).
    - If the issue is with Data(Table/Query) refresh issue, just click on **Refresh** button in the menu bar.
    - If the issue involves a visual, refresh the visual using the Performance Analyzer.
