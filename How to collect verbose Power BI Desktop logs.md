@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/8a398eba-7fa8-495a-b693-73d4425b752b)<br>
 <table>
 <td>WARNING</td>
 <td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
