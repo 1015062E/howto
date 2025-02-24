@@ -14,7 +14,10 @@
      %LOCALAPPDATA%\Microsoft\Power BI Desktop\Traces
      ```
      <br>![image](https://github.com/user-attachments/assets/4c44fbe6-a42b-435d-9b3c-b4580d057de2)
-   - For Power BI Desktop installed from [Microsoft Store](ms-windows-store:), navigate to: `%USERPROFILE%\Microsoft\Power BI Desktop Store App\Traces`
+   - For Power BI Desktop installed from [Microsoft Store](ms-windows-store:), navigate to:
+     ```
+     %USERPROFILE%\Microsoft\Power BI Desktop Store App\Traces
+     ```
 
 3. Set the system environment variable `PBI_forceTracing = 1`
    <br>      ![image](https://github.com/1015062E/howto/assets/160798406/c35f758b-f877-4b06-90f9-cff778eb16c8)
