@@ -13,7 +13,6 @@
      ```
      %LOCALAPPDATA%\Microsoft\Power BI Desktop\Traces
      ```
-     <br>![image](https://github.com/user-attachments/assets/4c44fbe6-a42b-435d-9b3c-b4580d057de2)
    - For Power BI Desktop installed from [Microsoft Store](ms-windows-store:), navigate to:
      ```
      %USERPROFILE%\Microsoft\Power BI Desktop Store App\Traces
