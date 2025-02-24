@@ -1,4 +1,4 @@
-<br>
+![image](https://github.com/user-attachments/assets/8a398eba-7fa8-495a-b693-73d4425b752b)<br>
 <table>
 <td>WARNING</td>
 <td>Please refer to this document with an understanding of the potential risks involved. Proceed at your own discretion.</td>
@@ -19,12 +19,13 @@
      ```
 
 3. Set the system environment variable `PBI_forceTracing = 1`
-   <br>      ![image](https://github.com/1015062E/howto/assets/160798406/c35f758b-f877-4b06-90f9-cff778eb16c8)
+   <br>![image](https://github.com/user-attachments/assets/2b7654bd-8225-4d1f-a74d-c06f5960f366)
+
    <br><br>Alternatively, you can set this variable by running the following command in the command prompt (make sure to run as administrator):
    ```cmd
    SETX PBI_forceTracing "1" /M
    ```
-   <br>      ![image](https://github.com/1015062E/howto/assets/160798406/27c60b97-44f2-4279-9a4b-e49df7b29eed)
+   <br>![image](https://github.com/user-attachments/assets/a16680e3-103e-41f5-984c-43eacb63bb0e)
 
 
 <br>![image](https://github.com/user-attachments/assets/bfec31a0-e5cf-41a8-ab04-bad76b3aa78d)<br>
