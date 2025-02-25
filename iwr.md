@@ -2,6 +2,8 @@
 
 *Disclaimer: This content was generated with the assistance of AI and should be verified for accuracy and relevance to your specific use case.*
 
+<br>https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.5<br>
+
 ## Understanding PowerShells Invoke-WebRequest with UseBasicParsing
 
 PowerShell’s `Invoke-WebRequest` (aliased as `iwr`) is a handy tool for interacting with web resources, and its `-UseBasicParsing` parameter makes it especially useful for troubleshooting network and technical issues. Let’s break down what it does, how it helps, and how to get the most out of it, based on a recent chat I had with an AI assistant.
