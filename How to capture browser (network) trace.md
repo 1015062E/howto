@@ -15,9 +15,7 @@ Steps to capture Chrome/Edge browser(network) trace.
 1. Then, fill in link in the address bar and then reproduce the issue.  (Just type/paste the URL, you can even start from beginning and do it step by step which is better)
 
 1. Stop collecting after issue got reproduced completely. (By clicking on the red button, so it grey out)   
-![image](https://github.com/user-attachments/assets/41a9c27e-b69e-4ac3-b6f2-ac5c2d839431)
-
-![image](https://user-images.githubusercontent.com/85205970/196571258-39e7ee2d-95f4-4074-b241-220e7d764e40.png)
+![image](https://github.com/user-attachments/assets/41a9c27e-b69e-4ac3-b6f2-ac5c2d839431)![image](https://user-images.githubusercontent.com/85205970/196571258-39e7ee2d-95f4-4074-b241-220e7d764e40.png)
 
 1. Save the trace   then Compress(PLEASE DO) and upload the file to the Worksapce shared with you. Please Compress/Zip the file before uploading. Please do! Thanks ~<br>
 ![image](https://user-images.githubusercontent.com/85205970/196571325-2fe49751-7d90-4c99-81ae-e1f6dc4b25a1.png)</br>For Edge browswer - </br>![image](https://user-images.githubusercontent.com/85205970/206968401-6b6f3a6f-1ab2-4f29-9fb3-3a152bfd019b.png)
