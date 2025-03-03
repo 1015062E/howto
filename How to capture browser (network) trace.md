@@ -7,10 +7,10 @@ Steps to capture Chrome/Edge browser(network) trace.
 1. Press F12 (or Ctrl + Shift + I) , within the new tab created above. (Click on 'Open DevTools' if you are using Edge and this is the first time you open Developer tool)<br/>![image](https://user-images.githubusercontent.com/85205970/206967026-d66c7c6e-3053-461f-8170-5ad2e3360374.png)<br/>
 
 1. Navigate to Network tab and tick checkboxes below.    
-![image](https://github.com/1015062E/howto/assets/160798406/01e0fff3-683d-453e-870d-68d9e9007288)
-<br/><br/>Similarly below tab if you are using Edge<br/>![image](https://github.com/1015062E/howto/assets/160798406/e03ca7fd-e0a3-4400-9b7a-bdc875298eb8)<br>
+![image](https://github.com/user-attachments/assets/08477940-28de-4b58-b9df-91dd6fbafddf)
 
-1. Trigger capturing if not (Button color is red means it's running) - by default it's running after opening the tool so no need to do act. Just pay attention if it's not.<br/>![image](https://user-images.githubusercontent.com/85205970/196571054-cb1574b6-d654-442e-a7f9-ffc983d13382.png)
+1. Trigger capturing if not (Button color is red means it's running) - by default it's running after opening the tool so no need to do act. Just pay attention if it's not.<br/>![image](https://github.com/user-attachments/assets/69a8c532-90bc-42ba-bbcf-5149055e6c48)
+
 
 1. Then, fill in link in the address bar and then reproduce the issue.  (Just type/paste the URL, you can even start from beginning and do it step by step which is better)
 
