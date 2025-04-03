@@ -18,4 +18,4 @@ Here’s how you can retrieve the GUID for your Power BI Premium or Fabric capac
    Identify and click on the specific **Premium capacity** or **Fabric capacity** you’re working with. This opens the capacity’s details page.
 
 6. **Locate the GUID in the URL**  
-   Once on the capacity details page, check the browser’s address bar. The URL will follow this structure:  https://app.powerbi.com/admin-portal/capacities/<GUID>?experience=power-bi, The `<GUID>` portion—typically a string of letters and numbers (e.g., `123e4567-e89b-12d3-a456-426614174000`)—is the unique identifier you need. Copy this value for your records.
+   Once on the capacity details page, check the browser’s address bar. The URL will follow this structure:  https://app.powerbi.com/admin-portal/capacities/GUID?experience=power-bi, The `<GUID>` portion—typically a string of letters and numbers (e.g., `123e4567-e89b-12d3-a456-426614174000`)—is the unique identifier you need. Copy this value for your records.
