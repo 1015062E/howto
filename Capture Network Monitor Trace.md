@@ -6,7 +6,7 @@ If the requests from the client could be dispatched to a random server, and you 
 
 
 ## Steps to capture Network traces
-1. Please download Network Monitor tool (**NM34_x64.exe** for most users) from https://www.microsoft.com/en-us/download/details.aspx?id=4865, and install it to your client and server(s) computers (right click on the installationf file and select **'Run as admin'**).
+1. Please download Network Monitor tool (**NM34_x64.exe** for most users) from https://www.microsoft.com/en-us/download/details.aspx?id=4865, and install it to your client and server(s) computers (right click on the installation file and select **'Run as admin'**).
 2. Click on Windows Start and search **'NetMon'**(or **'Network Monitor'**) then run it AS ADMINISTRATOR (This is required for capturing traces).<br>![image](https://user-images.githubusercontent.com/85205970/233249937-897253ce-f668-4cdc-9964-e7b5394e2062.png)
 
 3. In the **'Select Networks**' pane, choose which adapters to capture. Normally, the defaults are sufficient. (Keeping the default selections is okay) <br>![image](https://user-images.githubusercontent.com/85205970/233250244-bdfcd53f-d5ef-4a29-abc4-832c970eaf1d.png)
