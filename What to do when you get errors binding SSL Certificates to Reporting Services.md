@@ -42,6 +42,7 @@ How to clean the system of Reporting Services URLs, and rebind the URLs
 <br>d. Example command to delete:
 ```cmd
 netsh http delete sslcert ipport=[::]:443
+
 netsh http delete sslcert ipport=0.0.0.0:443
 ```
 
