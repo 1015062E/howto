@@ -37,7 +37,6 @@ How to clean the system of Reporting Services URLs, and rebind the URLs
 
 
 4. Once the URL reservations has been clean, we’ll want to clean the SSL reservations. Please see the following blog:
-<br>a. http://thinknook.com/ssrs-ssl-certificate-nightmare-2011-06-28/
 <br>b. Basically, we’ll need to delete the binding that corresponds to your Certificate Hash, whether it’s the old one or the new one, or both, and then start from scratch. Please look in the properties of the certificate being used to compare. You can access the certificate on the server using mmc.exe, and using the certificate snap-in.
 <br>c. Command to show SSL binding: `netsh http show sslcert`
 <br>d. Example command to delete:
