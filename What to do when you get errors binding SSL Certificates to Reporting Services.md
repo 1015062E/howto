@@ -46,7 +46,7 @@ netsh http delete sslcert ipport=[::]:443
 netsh http delete sslcert ipport=0.0.0.0:443
 ```
 
-6. Next, we’ll need to check the rsreportserver.config file. It’s located here: <Program Files>\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer
+6. Next, we’ll need to check the rsreportserver.config file. https://learn.microsoft.com/en-us/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver16
 <br>a. Make a copy of this file so that you have a backup.
 <br>b. Find the URLReservations portion. There should be one for the ReportServerWebService and ReportManager. If anything is left inside of the second <URL> blocks, you’ll want to clear it. Only delete the highlighted portion.<br>![image](https://github.com/user-attachments/assets/eac91679-2f97-46c2-9019-700f58137f69)
 
@@ -59,7 +59,7 @@ netsh http delete sslcert ipport=0.0.0.0:443
 
 6. Save the rsreportserver.config file.
 7. Now Stop and Start Reporting Services.
-8. At this point, everything should be clean, so you can now try to bind the URLs again. Start with the Web Service, and then move to the Report Manager URL.
+8. At this point, everything should be clean, so you can now try to bind the URLs again. Start with the Web Service, and then move to the Web Portal URL.
 
 
 If you have followed those steps from beginning to end, you should have a clean installation of Reporting Services to work with. If your certificate is failing to bind after this, you have an issue with your certificate. I hope this helps!
