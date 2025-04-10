@@ -16,16 +16,20 @@ You can also use the below steps if you are having trouble setting up HTTP URLs 
 
 How to clean the system of Reporting Services URLs, and rebind the URLs
 
-1. Go into Reporting Services Configuration Manager, and first remove all the URLs from the Report Manager URL tab:
-![image](https://github.com/1015062E/howto/assets/160798406/04976a76-a385-430b-842d-50db3591bb67)
+1. Go into Reporting Services Configuration Manager, and first remove all the URLs from the Report Manager/Web Portal URL tab:
+![image](https://github.com/user-attachments/assets/fb92e0fd-a69f-4495-bb6b-1248a8b5601d)
+
 
 2. Now do the same for the Web Service URL tab
-   <br>![image](https://github.com/1015062E/howto/assets/160798406/efa0a67b-a15f-4fdb-97b9-199d2cfae425)
+   ![image](https://github.com/user-attachments/assets/2306f1e9-391b-47d8-800f-5092419e689c)
+
 
 4. After clearing this portion, you’ll want to check your URL reservation on the server.
 <br>a. Open an Admin Command Prompt
 <br>b. Run “netsh http show urlacl”. Better yet, you might want to export the results out into notepad so you can view them; `netsh http show urlacl >> C:\urlac.txt`
-<br>c. Find all URLs that have “Reports” or “ReportServer” appended to it. If this is the only instance of Reporting Services on the server, removing the URL binding from Reporting Services Configuration Manager should have also removed all of the URL reservations, but sometimes this does leave some URLs that could not be removed by Reporting Services<br>![image](https://github.com/1015062E/howto/assets/160798406/b48a08e7-1848-44b7-8b3a-a67482368141)
+<br>c. Find all URLs that have “Reports” or “ReportServer” appended to it. If this is the only instance of Reporting Services on the server, removing the URL binding from Reporting Services Configuration Manager should have also removed all of the URL reservations, but sometimes this does leave some URLs that could not be removed by Reporting Services<br>![image](https://github.com/user-attachments/assets/0abf2dc9-c6e5-4180-91cb-f71b46c0eb8d)
+
+
 
 <br>d. If you find any URLs related to Reporting Services, we’ll want to delete those URLs.
 <br>e. Run the following command: `netsh http delete urlacl url="YOUR URL HERE"`
@@ -41,15 +45,17 @@ How to clean the system of Reporting Services URLs, and rebind the URLs
 netsh http delete sslcert ipport=[::]:443
 netsh http delete sslcert ipport=0.0.0.0:443
 ```
-<br>![image](https://github.com/1015062E/howto/assets/160798406/40564557-c374-464d-8a30-d96ae51b812c)
-
 
 6. Next, we’ll need to check the rsreportserver.config file. It’s located here: <Program Files>\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer
 <br>a. Make a copy of this file so that you have a backup.
-<br>b. Find the URLReservations portion. There should be one for the ReportServerWebService and ReportManager. If anything is left inside of the second <URL> blocks, you’ll want to clear it. Only delete the highlighted portion.<br>![image](https://github.com/1015062E/howto/assets/160798406/d72bbb6d-9716-46be-9616-de9a0208b734)
-<br>By default, and without any URLs reserved, it should look like this:<br>![image](https://github.com/1015062E/howto/assets/160798406/95d7f787-45a9-4990-8c4d-0b16a028e84d)
-<br>c. Scroll to the bottom of the rsreportserver.config file. If there are bindings, they would be located at the very bottom:<br>![image](https://github.com/1015062E/howto/assets/160798406/ea267031-4719-4871-9b07-91167eea77c5)
-<br>Clear those out and it should look like this:<br>![image](https://github.com/1015062E/howto/assets/160798406/10dcaa08-d247-4e88-b6fb-67104316a9df)
+<br>b. Find the URLReservations portion. There should be one for the ReportServerWebService and ReportManager. If anything is left inside of the second <URL> blocks, you’ll want to clear it. Only delete the highlighted portion.<br>![image](https://github.com/user-attachments/assets/eac91679-2f97-46c2-9019-700f58137f69)
+
+
+<br>By default, and without any URLs reserved, it should look like this:<br>![image](https://github.com/user-attachments/assets/4d9a583a-acbb-4ef8-aa86-3ac827f1e347)
+
+<br>c. Scroll to the bottom of the rsreportserver.config file. If there are bindings, they would be located at the very bottom:<br>![image](https://github.com/user-attachments/assets/0fbc7b98-7e0f-47a9-91e0-4a02be470f48)
+<br>Clear those out and it should look like this:<br>![image](https://github.com/user-attachments/assets/05bb3560-ccf1-4ebd-99e1-44f72a317dd8)
+
 
 6. Save the rsreportserver.config file.
 7. Now Stop and Start Reporting Services.
