@@ -2,7 +2,8 @@
 
 
 ### Quick method : Open web portal , click on "?", select "About xxx". Then take a screenshot for the popped up window. 
-![image](https://github.com/user-attachments/assets/d08fc9c7-78ed-4722-b90d-a3e8fb388220)
+![image](https://github.com/user-attachments/assets/325a209c-6046-44f9-ac59-3663b4d05668)
+
 
 
 -------------------------
