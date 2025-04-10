@@ -1,4 +1,3 @@
-Accessing [this](https://sqlvandalism.com/2017/03/13/what-to-do-when-you-get-errors-binding-ssl-certificates-to-reporting-services/) useful post is recently becoming unstable, hence copying all the content here for future references. 
 
 -----------------------------------
 To have a successful SSL Certificate binding to Reporting Services, it must have the 4 following properties:
