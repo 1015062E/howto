@@ -26,13 +26,7 @@ Else, please check out your Reporting Services' installation path following belo
 >![image](https://github.com/user-attachments/assets/0b8c1202-86d5-42d1-a54b-8f0c3db93baa)
 
 
-
-
-#### 5).You could then find some folders within main installation folder, like below. 
->![image](https://github.com/user-attachments/assets/1529581f-7ad2-4fc1-be33-5b1748aa8030)
-
-
-#### 6).To collect Reporting Service logs, please select and compress the whole LogFiles folder
+#### 5).You could then find some folders within main installation folder, to collect Reporting Service logs, please select and compress the whole LogFiles folder
 >![image](https://github.com/user-attachments/assets/03d63015-abfe-46ca-ba54-b8eb2d4ea9e3)
 
 Note : If you have multile instances joined in scale-out group, please do same operation for each instance. 
