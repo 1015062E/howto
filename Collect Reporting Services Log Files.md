@@ -18,7 +18,7 @@ Else, please check out your Reporting Services' installation path following belo
 
 ##### 2).Find **SQL Server Reporting Services, SSRS, or Power BI Report Server**(you should know what your reporting services is). Make sure you are checking the correct instance if you have more than one. 
 
-##### 3).Right click on the service(take below PBIRS as example, yours might be different! might be Power BI Report Server which you should know) and check properties. 
+##### 3).Right click on the service and check properties. 
 >![image](https://github.com/user-attachments/assets/b18e8cc0-765d-4f95-8555-9f2dfb75d906)
 
 
