@@ -1,5 +1,5 @@
 
-If you already know where your Reporting Services is installed, please directly go to [Step 6](https://github.com/1015062E/howto/blob/main/Collect%20Reporting%20Services%20Log%20Files.md#6to-collect-reporting-service-logs-please-select-and-compress-the-whole-logfiles-folder) down below. 
+If you already know where your Reporting Services is installed, please directly go to [Step 5]() down below. 
 
 Else, please check out your Reporting Services' installation path following below steps : 
 <br>Applies to : SQL Server Reporting Services(Native mode) 2016 and ealier, SSRS 2017 and later, on-prem Power BI Report Server. 
