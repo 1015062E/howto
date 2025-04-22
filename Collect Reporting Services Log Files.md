@@ -33,6 +33,8 @@ Else, please check out your Reporting Services' installation path following belo
 
 
 #### 6).To collect Reporting Service logs, please select and compress the whole LogFiles folder
+>![image](https://github.com/user-attachments/assets/03d63015-abfe-46ca-ba54-b8eb2d4ea9e3)
+
 Note : If you have multile instances joined in scale-out group, please do same operation for each instance. 
 >![image](https://github.com/user-attachments/assets/ea9281e5-8d98-4597-9ede-3d137175b4c8)
 
