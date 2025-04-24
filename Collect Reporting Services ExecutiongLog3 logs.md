@@ -8,8 +8,7 @@
 ##### Connect to the database via [SQL Server Management Studio (SSMS)](https://aka.ms/ssmsfullsetup)
 
 ##### Get the reports Execution records by executing below SQL Query in SSMS
-(Note: Select the DB first before running query below. The screenshot as above highlighed in red shows your catalog DB name)
-<br>![image](https://github.com/1015062E/howto/assets/160798406/663bcf00-105f-462b-9d87-ac7ba6ef6304)
+(Note: Select the ReportServer DB first before running query below. The screenshot as above highlighed in red shows your catalog DB name)
 
 ```sql
 SELECT * FROM [dbo].[ExecutionLog3]
@@ -17,6 +16,5 @@ SELECT * FROM [dbo].[ExecutionLog3]
 
 ##### Save the output as a .CSV file (CSV please , instead of other format because it would be much easier for us to import the data to our SQL Engine Database for analysis)
 Please **COMPRESS** the exported file to a .zip before uploading to the provided FTP File Transfer workspace. Thanks. 
-<br>![image](https://github.com/1015062E/howto/assets/160798406/6f42ebba-0949-4fa5-a39a-fbecaf128055)
 <br>
 <br>**COMPRESS** the file to a .zip before you upload, please. :)
