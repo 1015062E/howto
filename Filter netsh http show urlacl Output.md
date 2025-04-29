@@ -24,7 +24,7 @@ You are only interested in SSRS or Power BI Report Server URL reservations, and 
 
 ### Simple Text Search Approach (Not Precise)
 
-You can use a basic PowerShell command to search for `"Report"` anywhere in the output:
+You can use a basic **PowerShell** command to search for `"Report"` anywhere in the output:
 
 ```powershell
 netsh http show urlacl | Select-String -Pattern "Report" -Context 2,2 -CaseSensitive:$false
