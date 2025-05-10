@@ -75,6 +75,13 @@ $scanResultResponse = Invoke-RestMethod -Method Get -Uri $scanResultUri -Headers
 Write-Host "Scan Result: $($scanResultResponse | ConvertTo-Json -Depth 10)"
 ```
 
+To get more detailed output : 
+```
+POST https://api.powerbi.com/v1.0/myorg/admin/workspaces/getInfo?lineage={lineage}&datasourceDetails={datasourceDetails}&datasetSchema={datasetSchema}&datasetExpressions={datasetExpressions}&getArtifactUsers={getArtifactUsers}
+```
+![image](https://github.com/user-attachments/assets/53b93dbc-889c-49d9-9262-17fd8b842e3a)
+
+
 ### How It Works
 
 #### Step 1: Authentication
