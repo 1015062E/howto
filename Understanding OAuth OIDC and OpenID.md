@@ -60,3 +60,18 @@ OpenID is the **original** decentralized authentication protocol established by 
 ### Conclusion
 
 Understanding OAuth 2.0, OpenID Connect, and OpenID is crucial for designing robust authentication and authorization in modern applications. OAuth 2.0 provides the foundational authorization framework, OpenID Connect adds an interoperable authentication layer via ID Tokens, and classic OpenID laid the groundwork for decentralized SSO. By leveraging these standards—and the rich ecosystem of libraries and providers—you can implement secure, scalable identity solutions that meet diverse platform requirements.
+
+[1]: https://datatracker.ietf.org/doc/html/rfc6749?utm_source=chatgpt.com "RFC 6749 - The OAuth 2.0 Authorization Framework"
+[2]: https://openid.net/specs/openid-connect-core-1_0.html?utm_source=chatgpt.com "OpenID Connect Core 1.0 incorporating errata set 2"
+[3]: https://openid.net/developers/how-connect-works/?utm_source=chatgpt.com "How OpenID Connect Works - OpenID Foundation"
+[4]: https://openid.net/specs/openid-authentication-2_0.html?utm_source=chatgpt.com "OpenID Authentication 2.0 - Final"
+[5]: https://en.wikipedia.org/wiki/OpenID?utm_source=chatgpt.com "OpenID - Wikipedia"
+[6]: https://oauth.net/2/?utm_source=chatgpt.com "OAuth 2.0"
+[7]: https://openid.net/specs/openid-connect-core-1_0-final.html?utm_source=chatgpt.com "Final: OpenID Connect Core 1.0"
+[8]: https://konghq.com/blog/engineering/openid-vs-oauth-what-is-the-difference?utm_source=chatgpt.com "OpenID vs OAuth: Understanding API Security Protocols - Kong Inc."
+[9]: https://www.okta.com/identity-101/whats-the-difference-between-oauth-openid-connect-and-saml/?utm_source=chatgpt.com "What's the Difference Between OAuth, OpenID Connect, and SAML?"
+[10]: https://openid.net/?utm_source=chatgpt.com "OpenID - OpenID Foundation"
+[11]: https://supertokens.com/blog/openid-connect-vs-oauth2?utm_source=chatgpt.com "OpenID Connect vs OAuth2: The Differences and How to Choose"
+[12]: https://openid.net/developers/discover-openid-and-openid-connect/?utm_source=chatgpt.com "Discover OpenID and OpenID Connect - OpenID Foundation"
+[13]: https://developer.okta.com/docs/concepts/oauth-openid/?utm_source=chatgpt.com "OAuth 2.0 and OpenID Connect overview - Okta Developer"
+[14]: https://openid.net/developers/specs/?utm_source=chatgpt.com "Explore All Specifications - OpenID Foundation"
