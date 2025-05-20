@@ -39,20 +39,8 @@ This method can also be used by IT administrators to locate users or groups with
 2. Navigate to **Microsoft Entra ID** → **Roles and administrators**.
 3. Search for and select the **Fabric Administrator** role.
 4. Under the **Active assignments** section, you’ll see all users or groups currently assigned.
-
-This method provides the same outcome as the Microsoft 365 Admin Center but may be preferred by organizations managing identity through Azure Active Directory.
-
----
-
-### Optional: Confirm Admin Privileges in Power BI
-
-If you believe you are (or someone else is) a Power BI/Fabric admin and want to confirm it:
-
-1. Sign in to [https://app.powerbi.com](https://app.powerbi.com).
-2. Click the ⚙️ **Settings** icon and select **Admin portal**.
-3. If you see full sections such as **Tenant settings**, **Audit logs**, and **Usage metrics**, you are an admin.
-4. If you only see **Capacity settings**, you are **not** an admin.
 ![image](https://github.com/user-attachments/assets/a9b1f885-6794-4eb3-a13b-205e007ee81f)
+This method provides the same outcome as the Microsoft 365 Admin Center but may be preferred by organizations managing identity through Azure Active Directory.
 
 ---
 
@@ -61,12 +49,6 @@ If you believe you are (or someone else is) a Power BI/Fabric admin and want to 
 - **If you are a user** trying to gain access to Power BI content, send these instructions to your IT or Microsoft 365 administrator.
 - **If you are an admin** receiving this request, use the methods above to identify the Fabric Administrators in your tenant.
 - Once identified, contact the appropriate administrator to request access or configuration changes.
-
----
-
-### Placeholder Notice
-
-> Replace all organization-specific details with your actual company or department names. For example, "contact your IT team" may refer to "contact the [YourOrg] IT Service Desk."
 
 ---
 
