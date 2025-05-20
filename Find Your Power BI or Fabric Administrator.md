@@ -25,6 +25,7 @@ If you (or someone on your IT team) has a Global or Privileged Role Administrato
 3. In the list of roles, search for **Fabric Administrator**.
 4. Click the **Fabric Administrator** role and open the **Assigned** tab.
 5. Review the list of users and groups with this role.
+![image](https://github.com/user-attachments/assets/394604de-0718-438b-ad4c-d60fe906cd6d)
 
 > **Note**: If you do not have access to the Microsoft 365 Admin Center, share these steps with your IT helpdesk or internal admin team.
 
@@ -51,6 +52,7 @@ If you believe you are (or someone else is) a Power BI/Fabric admin and want to 
 2. Click the ⚙️ **Settings** icon and select **Admin portal**.
 3. If you see full sections such as **Tenant settings**, **Audit logs**, and **Usage metrics**, you are an admin.
 4. If you only see **Capacity settings**, you are **not** an admin.
+![image](https://github.com/user-attachments/assets/a9b1f885-6794-4eb3-a13b-205e007ee81f)
 
 ---
 
