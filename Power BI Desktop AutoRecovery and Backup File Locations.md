@@ -36,6 +36,8 @@ Below are all the known paths where Power BI Desktop might store temporary backu
 
 ```plaintext
 %LocalAppData%\Microsoft\Power BI Desktop\TempSaves
+````
+```plaintext
 %LocalAppData%\Microsoft\Power BI Desktop\AutoRecovery
 ````
 
@@ -43,6 +45,8 @@ Below are all the known paths where Power BI Desktop might store temporary backu
 
 ```plaintext
 %LocalAppData%\Microsoft\Power BI Desktop Store App\TempSaves
+```
+```plaintext
 %LocalAppData%\Microsoft\Power BI Desktop Store App\AutoRecovery
 ```
 
@@ -54,8 +58,6 @@ Below are all the known paths where Power BI Desktop might store temporary backu
 %USERPROFILE%\Microsoft\Power BI Desktop Store App\TempSaves
 %USERPROFILE%\Microsoft\Power BI Desktop Store App\AutoRecovery
 ```
-
-> Tip: You can paste these paths directly into File Explorer or use environment variables in PowerShell or CMD.
 
 ---
 
