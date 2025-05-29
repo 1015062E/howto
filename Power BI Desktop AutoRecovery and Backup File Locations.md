@@ -79,7 +79,9 @@ If you're not sure where the files might be hiding, run this PowerShell command:
 
 ```powershell
 Get-ChildItem -Path "$env:USERPROFILE\Microsoft*" -Recurse -Include *.pbix -ErrorAction SilentlyContinue
+
 Get-ChildItem -Path "$env:LocalAppData\Microsoft*" -Recurse -Include *.pbix -ErrorAction SilentlyContinue
+
 ```
 
 This will recursively search for `.pbix` files under folders starting with `Microsoft` in your profile directory.
