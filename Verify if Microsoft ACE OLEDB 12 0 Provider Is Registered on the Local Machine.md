@@ -75,7 +75,9 @@ try {
 }
 ```
 
-> 🔸 If the error message is `Authentication failed`, this usually means the provider was loaded, but no valid connection string or file was supplied. This is acceptable for the purpose of verifying registration.
+> 🔸 If the error message is `Authentication failed`, this usually means the provider was loaded, but no valid connection string or file was supplied. This is acceptable for the purpose of verifying registration.<br>![image](https://github.com/user-attachments/assets/9c54f07f-7979-4e96-83d9-7d8b36a5472e)
+<br>![image](https://github.com/user-attachments/assets/f9e2cc5a-ee37-430a-9b46-2b98930f4cf1)
+
 
 ---
 
