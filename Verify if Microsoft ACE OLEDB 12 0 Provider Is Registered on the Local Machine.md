@@ -16,7 +16,7 @@ This article walks through several reliable ways to verify whether the `Microsof
 
 ---
 
-### 🔍 Understanding the Issue
+### Understanding the Issue
 
 This provider is required to load data from:
 
@@ -27,7 +27,7 @@ Power BI, when refreshing queries that source from Excel or Access, depends on t
 
 ---
 
-### ✅ Step-by-Step: How to Verify the Provider
+### Step-by-Step: How to Verify the Provider
 
 #### #### Option 1: Check Windows Registry
 
@@ -59,7 +59,7 @@ If this path is not found, it means the 32-bit version is not registered.
 
 ---
 
-### ✅ Option 2: COM Object Load Test
+### Option 2: COM Object Load Test
 
 To verify whether the provider is not only registered but usable, you can attempt to instantiate it using PowerShell:
 
@@ -68,10 +68,10 @@ try {
     $conn = New-Object -ComObject ADODB.Connection
     $conn.Provider = "Microsoft.ACE.OLEDB.12.0"
     $conn.Open()
-    Write-Host "✅ Provider is installed and working."
+    Write-Host "Provider is installed and working."
     $conn.Close()
 } catch {
-    Write-Host "❌ Provider test failed: $($_.Exception.Message)"
+    Write-Host "Provider test failed: $($_.Exception.Message)"
 }
 ```
 
@@ -79,7 +79,7 @@ try {
 
 ---
 
-### ⚙️ How to Fix If Not Installed
+### How to Fix If Not Installed
 
 If the provider is not registered, download and install the **Access Database Engine 2016 Redistributable**:
 
@@ -89,7 +89,7 @@ Install the version that matches your **Power BI Desktop** or **Office** bitness
 
 ---
 
-### 🧩 Additional Notes
+### Additional Notes
 
 * **Check Power BI Desktop bitness:** Go to `Help > About` in Power BI Desktop.
 * **Match bitness:** Ensure your Office, Power BI Desktop, and OLEDB provider are either all 64-bit or all 32-bit.
@@ -97,7 +97,7 @@ Install the version that matches your **Power BI Desktop** or **Office** bitness
 
 ---
 
-### 🛠️ Troubleshooting Power BI Errors
+### Troubleshooting Power BI Errors
 
 If you're getting this error in Power BI:
 
@@ -115,6 +115,6 @@ Use the following checklist:
 
 ---
 
-### 🧼 Final Thoughts
+### Final Thoughts
 
 Properly verifying and registering the `Microsoft.ACE.OLEDB.12.0` provider is essential for working with Excel or Access data sources in tools like Power BI. These registry and COM test steps provide a reliable way to confirm the provider's availability and avoid confusing runtime errors.
