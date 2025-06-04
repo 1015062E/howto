@@ -86,9 +86,10 @@ try {
 If the provider is not registered, download and install the **Access Database Engine 2016 Redistributable**:
 
 * [Download Link (Microsoft)](https://www.microsoft.com/en-us/download/details.aspx?id=54920)
+<br>Or https://support.microsoft.com/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9
 
 Install the version that matches your **Power BI Desktop** or **Office** bitness (64-bit vs 32-bit).
-<br>Or https://support.microsoft.com/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9
+
 
 
 ---
