@@ -89,6 +89,7 @@ If the provider is not registered, download and install the **Access Database En
 
 Install the version that matches your **Power BI Desktop** or **Office** bitness (64-bit vs 32-bit).
 
+Or https://support.microsoft.com/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9
 ---
 
 ### Additional Notes
