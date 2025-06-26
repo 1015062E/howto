@@ -22,16 +22,14 @@ Use **File Explorer** to navigate to the files or folder you want to compress.
 1. Right-click the files or a folder.
 2. Hover over **7-Zip** in the context menu.
 3. Select **"Add to archive..."**
+(You may need to press and hold "Shift" then right click on the selected files/folder to be able to see 7-zip option)
+![image](https://github.com/user-attachments/assets/09feeb61-d489-449e-8139-e9b9dbac57be)
+
 
 #### Step 3: Configure Compression Settings
 
 In the **Add to Archive** window, configure the settings as follows:
-
-| Field                    | Value                                             |
-|-------------------------|---------------------------------------------------|
-| **Archive format**      | `7z` (or `zip`, but `7z` gives better compression) |
-| **Compression level**   | `Normal` (or `Ultra` for smaller size but slower) |
-| **Split to volumes, bytes** | `200M` (this means 200 megabytes per part)        |
+![image](https://github.com/user-attachments/assets/9c65b77a-3c12-4d53-8890-846ea9b180fa)
 
 > ✅ **Note**: Use **capital 'M'** for megabytes. Lowercase 'm' may be interpreted as megabits or result in errors.
 
@@ -65,9 +63,3 @@ To ensure a smooth extraction experience for the recipient, provide them with th
 > ⚠️ Ensure **none of the parts are missing or renamed**. All segments must be present for extraction to succeed.
 
 ---
-
-### Use Cases and Notes
-
-- **Cloud sharing**: Many file-sharing services (e.g., email, free cloud drives) have upload size limits. Splitting into 200MB parts helps bypass those.
-- **Non-technical recipients**: This method allows easy extraction with minimal steps.
-- **Backup scenarios**: Helpful for archiving large files across multiple media (e.g., DVDs, USB drives).
