@@ -29,7 +29,8 @@ Use **File Explorer** to navigate to the files or folder you want to compress.
 #### Step 3: Configure Compression Settings
 
 In the **Add to Archive** window, configure the settings as follows:
-![image](https://github.com/user-attachments/assets/9c65b77a-3c12-4d53-8890-846ea9b180fa)
+![image](https://github.com/user-attachments/assets/08ada49e-ff35-458b-b9f2-752301824b98)
+
 
 > ✅ **Note**: Use **capital 'M'** for megabytes. Lowercase 'm' may be interpreted as megabits or result in errors.
 
