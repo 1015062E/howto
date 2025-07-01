@@ -24,7 +24,7 @@ Before diving into advanced configuration, try these basic steps:
 
 For detailed optimization guidance:
 - [Optimize a model for performance in Power BI – Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/optimize-model-power-bi/)
-- [Optimization guide for Power BI – Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/power-bi-performance)
+- [Optimization guide for Power BI](https://learn.microsoft.com/en-us/power-bi/guidance/power-bi-optimization)
 
 ---
 
