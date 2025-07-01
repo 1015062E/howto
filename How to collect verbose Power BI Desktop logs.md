@@ -25,14 +25,29 @@
    SETX PBI_forceTracing "1" /M
    ```
    <br>![image](https://github.com/user-attachments/assets/a16680e3-103e-41f5-984c-43eacb63bb0e)
+   <br>To validate whether the variable was set correctly and still exists, you can check its value using the following methods.
+   Using Command Prompt (CMD): To check the **current session's** environment variable value:
+      ```cmd
+      echo %PBI_forceTracing%
+      ```
+      
+      To confirm that the variable exists system-wide:
+      ```cmd
+      set PBI_forceTracing
+      ```
+      
+      To specifically retrieve a **system-level (machine)** environment variable:
+      
+      ```powershell
+      [System.Environment]::GetEnvironmentVariable("PBI_forceTracing", "Machine")
+      ```
 
-
-4. Reproduce the issue (the shorter, the better).
+5. Reproduce the issue (the shorter, the better).
    - If the issue is with Data(Table/Query) refresh issue, just click on **Refresh** button in the menu bar.
    - If the issue involves a visual, refresh the visual using the Performance Analyzer.
    - Try to minimize the number of visuals on the page to make the trace shorter.
 
-5. **Close Power BI Desktop**. (Important! This ensures logs could be refreshed to disk from Memory)
+6. **Close Power BI Desktop**. (Important! This ensures logs could be refreshed to disk from Memory)
 Open the log files folder after issue is resproduced, then exit Power BI Destkop app(close all PBI Desktop windows!), compress the entire log files folder(select all files, right click then "send to" -> "Compressed").
 
 **Note:** Please remove these settings after usage to avoid slowing down Power BI Desktop performance during daily use.
