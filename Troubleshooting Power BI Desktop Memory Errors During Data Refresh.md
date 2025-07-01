@@ -84,17 +84,6 @@ If refreshing a single table also fails with the same error, this likely means:
 
 ---
 
-### 📋 Additional Info You Should Gather
-
-To provide or document useful context for troubleshooting:
-1. Are you using the 64-bit and latest version of Power BI Desktop?
-2. Approximately how large is the report (file size / row count)?
-3. What is the data source (e.g., SQL, Excel, SharePoint)?
-4. Does the error occur on every refresh or intermittently?
-5. How much RAM is installed and available during refresh?
-
----
-
 ### ✅ Summary
 
 | Scenario                                   | Suggested Action                                                                 |
