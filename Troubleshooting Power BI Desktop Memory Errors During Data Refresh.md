@@ -66,7 +66,7 @@ These settings control how many Power Query evaluations run in parallel and how 
 > **Important:** You must **restart Power BI Desktop** for these changes to take effect.
 
 More details:
-- [Evaluation configuration settings for Desktop – Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/power-bi-desktop-performance#evaluation-configuration-settings)
+- [Evaluation configuration settings for Desktop – Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-evaluation-configuration)
 
 ---
 
