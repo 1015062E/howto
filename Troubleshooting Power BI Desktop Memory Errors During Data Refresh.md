@@ -31,7 +31,7 @@ For detailed optimization guidance:
 ### 🔍 Step-by-Step Diagnosis: Individual vs. Full Refresh
 
 #### ✅ Test: Refresh a Single Table
-Try refreshing one table individually (e.g., `"Order and revenue - self service"`) by right-clicking on it and selecting **Refresh Data**. If this works but full refresh still fails:
+Try refreshing one table individually by right-clicking on it and selecting **Refresh Data**. If this works but full refresh still fails:
 
 ---
 
