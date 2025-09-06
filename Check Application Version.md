@@ -22,6 +22,11 @@ One useful example is checking the version of an installed application such as A
 > Example: For Adobe Acrobat, the path might look like
 > `C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe`.
 
+Example:
+```powershell
+((Get-Item "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe").VersionInfo).ProductVersion
+````
+
 ---
 
 ### Step-by-Step Explanation
